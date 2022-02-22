@@ -1,5 +1,5 @@
 ___
-# DELETE THIS INSTRUCTIONS AND ADD A SHORT INTRODUCTION ABOUT YOUR PROJECT
+# Greenhouse Monitoring System Based on Image Spectral Data
 ___
 
 ## Please refer the instructions in below URL:
