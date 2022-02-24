@@ -22,7 +22,8 @@ title: Greenhouse Monitoring System
 ## Table of Contents
 1. [Overview](#overview)
 2. [Problem Statement](#problem-statement)
-3. [Links](#links)
+3. [Solution](#solution)
+4. [Links](#links)
 
 ---
 
