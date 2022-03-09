@@ -1,1 +1,6 @@
-dist/
+# dist/
+build
+coverage
+
+*.js
+*.html
