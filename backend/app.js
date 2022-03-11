@@ -15,8 +15,8 @@ const mongoose = require('mongoose');
 mongoose.Promise = Promise;
 
 //mongodb URL
-const url = 'mongodb://localhost:27017/conFusion';
-const connect = mongoose.connect(url);
+const url = 'mongodb+srv://vishva:apMNDnRquNU2K9P@cluster0.n0awk.mongodb.net/myFirstDatabase?retryWrites=true&w=majority';
+const connect = mongoose.connect(url, {autoIndex: false});
 
 connect.then((db) => {
     console.log("Connected correctly to server");
