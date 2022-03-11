@@ -337,6 +337,7 @@ const index = () => {
           <WidgetsDropdown />
           <WidgetsDropdown />
           <WidgetsDropdown />
+          
         </CCol>
       </CRow>
 
