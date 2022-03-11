@@ -19,16 +19,18 @@ const WidgetsDropdown = () => {
       <CCol sm={6} lg={3}>
         <CWidgetStatsA
           className="mb-4"
-          color="primary"
+          color="success"
           value={
             <>
-              26K{' '}
-              <span className="fs-6 fw-normal">
+              A0{' '}
+              {/* <span className="fs-6 fw-normal">
                 (-12.4% <CIcon icon={cilArrowBottom} />)
-              </span>
+              </span> */}
             </>
           }
+          /*
           title="Users"
+          
           action={
             <CDropdown alignment="end">
               <CDropdownToggle color="transparent" caret={false} className="p-0">
@@ -42,6 +44,7 @@ const WidgetsDropdown = () => {
               </CDropdownMenu>
             </CDropdown>
           }
+          
           chart={
             <CChartLine
               className="mt-3 mx-3"
@@ -100,10 +103,60 @@ const WidgetsDropdown = () => {
                 },
               }}
             />
-          }
+          }*/
         />
       </CCol>
       <CCol sm={6} lg={3}>
+        <CWidgetStatsA
+          className="mb-4"
+          color="success"
+          value={
+            <>
+              A1{' '}
+              {/* <span className="fs-6 fw-normal">
+                (-12.4% <CIcon icon={cilArrowBottom} />)
+              </span> */}
+            </>
+          }
+          />
+      </CCol>
+
+      <CCol sm={6} lg={3}>
+        <CWidgetStatsA
+          className="mb-4"
+          color="success"
+          value={
+            <>
+              A2{' '}
+              {/* <span className="fs-6 fw-normal">
+                (-12.4% <CIcon icon={cilArrowBottom} />)
+              </span> */}
+            </>
+          }
+          />
+      </CCol>
+
+      <CCol sm={6} lg={3}>
+        <CWidgetStatsA
+          className="mb-4"
+          color="danger"
+          value={
+            <>
+              A3{' '}
+              {/* <span className="fs-6 fw-normal">
+                (-12.4% <CIcon icon={cilArrowBottom} />)
+              </span> */}
+            </>
+          }
+          />
+      </CCol>
+    </CRow>
+
+
+  )
+}
+
+      {/* <CCol sm={6} lg={3}>
         <CWidgetStatsA
           className="mb-4"
           color="info"
@@ -121,12 +174,12 @@ const WidgetsDropdown = () => {
               <CDropdownToggle color="transparent" caret={false} className="p-0">
                 <CIcon icon={cilOptions} className="text-high-emphasis-inverse" />
               </CDropdownToggle>
-              <CDropdownMenu>
+              { <CDropdownMenu>
                 <CDropdownItem>Action</CDropdownItem>
                 <CDropdownItem>Another action</CDropdownItem>
                 <CDropdownItem>Something else here...</CDropdownItem>
                 <CDropdownItem disabled>Disabled action</CDropdownItem>
-              </CDropdownMenu>
+              </CDropdownMenu> }
             </CDropdown>
           }
           chart={
@@ -353,9 +406,7 @@ const WidgetsDropdown = () => {
             />
           }
         />
-      </CCol>
-    </CRow>
-  )
-}
+      </CCol> */}
+    
 
 export default WidgetsDropdown

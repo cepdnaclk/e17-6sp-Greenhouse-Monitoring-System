@@ -21,25 +21,25 @@ const _nav = [
   {
     component: CNavItem,
     name: 'Dashboard',
-    to: '/login',
+    to: '/_dashboard',
     icon: <CIcon icon={cilSpeedometer} customClassName="nav-icon" />,
   },
   {
     component: CNavItem,
     name: 'Overview',
-    to: '/login',
+    to: '/overview',
     icon: <CIcon icon={cilPuzzle} customClassName="nav-icon" />,
   },
   {
     component: CNavItem,
     name: 'Predictions',
-    to: '/login',
+    to: '/predictions',
     icon: <CIcon icon={cilChartPie} customClassName="nav-icon" />,
   },
   {
     component: CNavItem,
     name: 'Reports',
-    to: '/login',
+    to: '/reports',
     icon: <CIcon icon={cilNotes} customClassName="nav-icon" />,
   },
   {
@@ -63,13 +63,13 @@ const _nav = [
   {
     component: CNavItem,
     name: 'Profile',
-    to: '/login',
+    to: '/profile',
     icon: <CIcon icon={cilUser} customClassName="nav-icon" />,
   },
   {
     component: CNavItem,
     name: 'Signout',
-    to: '/login',
+    to: '/home',
     icon: <CIcon icon={cibToggl} customClassName="nav-icon" />,
   },
 ]
