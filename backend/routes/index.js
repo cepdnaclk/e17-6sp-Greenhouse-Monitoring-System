@@ -1,8 +1,17 @@
-var express = require('express');
-var router = express.Router();
+const express = require('express');
+const bodyParser = require('body-parser');
 
-/* GET home page. */
-router.get('/', function(req, res, next) {
+const router = express.Router();
+
+router.use(bodyParser.json());
+
+router.route('/')
+.all((req,res,next) =>{
+  res.statusCode = 200;
+  res.setHeader('Content-Type','text/plain');
+  next();
+})
+.get((req, res, next) => {
   res.render('index', { title: 'Express' });
 });
 
