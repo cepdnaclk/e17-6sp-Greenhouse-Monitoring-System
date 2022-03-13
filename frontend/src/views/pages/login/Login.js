@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, Navigate } from 'react-router-dom'
 
 import {
   CButton,
@@ -41,6 +41,9 @@ const Login = () => {
     axios.post('http://localhost:3000/users/login', credentials)
     .then((res)=> {
       console.log(res.data);
+      if (res.data.success) {
+        Navigate('localhost:3001/dashboard');
+      }
     })
   }
 
