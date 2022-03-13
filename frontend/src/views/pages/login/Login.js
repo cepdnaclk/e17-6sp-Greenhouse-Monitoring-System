@@ -1,5 +1,7 @@
-import React, { useState } from 'react'
+import React, { useState, Suspense } from 'react'
 import { Link, Navigate } from 'react-router-dom'
+
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 
 import {
   CButton,
@@ -18,15 +20,8 @@ import CIcon from '@coreui/icons-react'
 import { cilLockLocked, cilUser } from '@coreui/icons'
 
 import axios from 'axios';
+import DefaultLayout from 'src/layout/DefaultLayout'
 
-
-
-
-const test = ()=> {
-  console.log('Hello Manohara <(');
-};
-
-// const authenticateUser = ()
 
 const Login = () => {
   const [username, setUsername] = useState('');
@@ -42,7 +37,7 @@ const Login = () => {
     .then((res)=> {
       console.log(res.data);
       if (res.data.success) {
-        Navigate('localhost:3001/dashboard');
+        window.location = '/dashboard'
       }
     })
   }
