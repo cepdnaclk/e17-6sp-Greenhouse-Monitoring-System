@@ -1,5 +1,6 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
+
 import {
   CButton,
   CCard,
@@ -16,7 +17,33 @@ import {
 import CIcon from '@coreui/icons-react'
 import { cilLockLocked, cilUser } from '@coreui/icons'
 
+import axios from 'axios';
+
+
+
+
+const test = ()=> {
+  console.log('Hello Manohara <(');
+};
+
+// const authenticateUser = ()
+
 const Login = () => {
+  const [username, setUsername] = useState('');
+  const [password, setPassword] = useState('');
+
+  var credentials = {
+    username: username,
+    password: password
+  };
+
+  const authenticateUser = ()=> {
+    axios.post('http://localhost:3000/users/login', credentials)
+    .then((res)=> {
+      console.log(res.data);
+    })
+  }
+
   return (
     <div className="bg-light min-vh-100 d-flex flex-row align-items-center">
       <CContainer>
@@ -32,13 +59,14 @@ const Login = () => {
                       <CInputGroupText>
                         <CIcon icon={cilUser} />
                       </CInputGroupText>
-                      <CFormInput placeholder="Username" autoComplete="username" />
+                      <CFormInput value={username} onChange={(e)=>setUsername(e.target.value)} placeholder="Username" autoComplete="username" />
                     </CInputGroup>
                     <CInputGroup className="mb-4">
                       <CInputGroupText>
                         <CIcon icon={cilLockLocked} />
                       </CInputGroupText>
                       <CFormInput
+                        value={password} onChange={(e)=>setPassword(e.target.value)}
                         type="password"
                         placeholder="Password"
                         autoComplete="current-password"
@@ -46,7 +74,7 @@ const Login = () => {
                     </CInputGroup>
                     <CRow>
                       <CCol xs={6}>
-                        <CButton color="primary" className="px-4">
+                        <CButton onClick={authenticateUser} color="primary" className="px-4">
                           Login
                         </CButton>
                       </CCol>
