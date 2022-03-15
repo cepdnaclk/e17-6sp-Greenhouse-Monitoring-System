@@ -16,6 +16,11 @@ Greenhouse Monitoring System provides a platform to manage the Greenhouse by tra
 ![](https://github.com/cepdnaclk/e17-co328-Greenhouse-Monitoring-System/blob/main/docs/images/overview.PNG)
 
 ## Problem Statement
+- Different behaviors of plants under different conditions
+- Various disorders of plants
+- Taking manual measurements of information of the plants
+- Inefficiency of labor system
+- Unnecessary higher cost for maintenance
 Although the environmental conditions of plants are controlled, the temporal effects like temperature, humidity may not evenly balanced for each crop. Therefore, plants respond differently under those unbalanced environmental conditions. And, plants can have different kind of disorders. It leads to production failures in greenhouses. As well, the crop yield may not be harvested at the right moment. Because of that there would be a huge harvest wastage.
 
 In current greenhouses, the workers continuously observe the plant growth. In that case, workers will be tired and labor system would be inefficient. So, there would be an unnecessary higher cost for maintenance.
