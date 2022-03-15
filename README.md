@@ -7,11 +7,13 @@ ___
 2. [Problem Statement](#problem-statement)
 3. [Solution](#solution)
 4. [Team](#team)
-5. [Supervisors](#spervisors)
+5. [Product Owners](#product_owners)
 6. [Links](#links)
 
 ## Overview
 Greenhouse Monitoring System provides a platform to manage the Greenhouse by tracking the phases of plant harvest, identifying any plant disorder and tracking the plant growth by using the image spectral data of plants. The system is basically considered the key problems plant diseases, huge harvest wastage and unnecessary expensive maintenance in a greenhouse. So this system will make a high positive impact on maximizing the harvest and reduce maintenance cost in Greenhouses.
+
+![](https://github.com/cepdnaclk/e17-co328-Greenhouse-Monitoring-System/blob/main/docs/images/overview.PNG)
 
 ## Problem Statement
 Although the environmental conditions of plants are controlled, the temporal effects like temperature, humidity may not evenly balanced for each crop. Therefore, plants respond differently under those unbalanced environmental conditions. And, plants can have different kind of disorders. It leads to production failures in greenhouses. As well, the crop yield may not be harvested at the right moment. Because of that there would be a huge harvest wastage.
@@ -26,9 +28,12 @@ Plant diseases, huge harvest wastage and unnecessary expensive maintenance have 
 - Manohara H.T. : E/17/206 :  [e17206@eng.pdn.ac.lk](e17206@eng.pdn.ac.lk)
 - Kalpana M.W.V: E/17/148 : [e17148@eng.pdn.ac.lk](e17148@eng.pdn.ac.lk)
 
-## Supervisors
+## Product Owners
 - Dr. Asitha Bandaranayake
 - Mr. Prabhath Gunathilake
+
+## Scrum Master
+- Ms. Kalani Hansima
 
 ## Related Links
 - [Project Page](https://cepdnaclk.github.io/e17-co328-Greenhouse-Monitoring-System/)
