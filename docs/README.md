@@ -46,6 +46,17 @@ Plant diseases, huge harvest wastage and unnecessary expensive maintenance have 
 
 ![](https://github.com/cepdnaclk/e17-co328-Greenhouse-Monitoring-System/blob/main/docs/images/camerasystem.PNG)
 
+## Solution Architecture
+Functionalities of the system
+1. Extract images from the video file.
+2. Extract features from images.
+3. Store those images and features in a database.
+4. Data processing and data analysis using ML Model
+5. Data Visualization
+6. Data Prediction and generate reports
+
+![](https://github.com/cepdnaclk/e17-co328-Greenhouse-Monitoring-System/blob/main/docs/images/architecture.PNG)
+
 ## System Modelling - Use Case Diagram
 
 
