@@ -46,8 +46,7 @@ Plant diseases, huge harvest wastage and unnecessary expensive maintenance have 
 
 ![](https://github.com/cepdnaclk/e17-co328-Greenhouse-Monitoring-System/blob/main/docs/images/camerasystem.PNG)
 
-## System Modelling
-# Use Case Diagram
+## System Modelling - Use Case Diagram
 
 
 ## Team
