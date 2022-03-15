@@ -14,11 +14,6 @@ title: Greenhouse Monitoring System
 ---
 
 
-## Team
--  E/17/297, Rupasinghe T.T.V.N., [e17297@eng.pdn.ac.lk](mailto:e17297@eng.pdn.ac.lk)
--  E/17/206, Manohara H.T., [e17206@eng.pdn.ac.lk](mailto:e17206@eng.pdn.ac.lk)
--  E/17/148, Kalpana M. W. V., [e17148@eng.pdn.ac.lk](mailto:e17148@eng.pdn.ac.lk)
-
 ## Table of Contents
 1. [Overview](#overview)
 2. [Problem Statement](#problem-statement)
@@ -38,6 +33,11 @@ In current greenhouses, the workers continuously observe the plant growth. In th
 
 ## Solution
 Plant diseases, huge harvest wastage and unnecessary expensive maintenance have been observed as the major issues in current Greenhouse Systems. These key problems simulated the development of image analysis and computer vision methods. That's how the "greenhouse monitoring system based on image spectral data" came to the stage.
+
+## Team
+-  E/17/297, Rupasinghe T.T.V.N., [e17297@eng.pdn.ac.lk](mailto:e17297@eng.pdn.ac.lk)
+-  E/17/206, Manohara H.T., [e17206@eng.pdn.ac.lk](mailto:e17206@eng.pdn.ac.lk)
+-  E/17/148, Kalpana M. W. V., [e17148@eng.pdn.ac.lk](mailto:e17148@eng.pdn.ac.lk)
 
 ## Links
 
