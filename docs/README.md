@@ -26,7 +26,7 @@ title: Greenhouse Monitoring System
 
 Greenhouse Monitoring System provides a platform to manage the Greenhouse by tracking the phases of plant harvest, identifying any plant disorder and tracking the plant growth by using the image spectral data of plants. The system is basically considered the key problems plant diseases, huge harvest wastage and unnecessary expensive maintenance in a greenhouse. So this system will make a high positive impact on maximizing the harvest and reduce maintenance cost in Greenhouses.
 
-![](https://github.com/cepdnaclk/e17-co328-Greenhouse-Monitoring-System/blob/main/docs/images/intro_1.png)
+![](https://github.com/cepdnaclk/e17-co328-Greenhouse-Monitoring-System/blob/main/docs/images/introduction.PNG)
 
 ## Problem Statement
 - Different behaviors of plants under different conditions
@@ -44,7 +44,11 @@ In current greenhouses, the workers continuously observe the plant growth. In th
 ## Solution
 Plant diseases, huge harvest wastage and unnecessary expensive maintenance have been observed as the major issues in current Greenhouse Systems. These key problems simulated the development of image analysis and computer vision methods. That's how the "greenhouse monitoring system based on image spectral data" came to the stage.
 
-![](https://github.com/cepdnaclk/e17-co328-Greenhouse-Monitoring-System/blob/main/docs/images/overview.PNG)
+![](https://github.com/cepdnaclk/e17-co328-Greenhouse-Monitoring-System/blob/main/docs/images/camerasystem.PNG)
+
+## System Modelling
+# Use Case Diagram
+
 
 ## Team
 -  E/17/297, Rupasinghe T.T.V.N., [e17297@eng.pdn.ac.lk](mailto:e17297@eng.pdn.ac.lk)
