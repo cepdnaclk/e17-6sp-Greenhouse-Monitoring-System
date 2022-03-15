@@ -31,17 +31,20 @@ Plant diseases, huge harvest wastage and unnecessary expensive maintenance have 
 
 ![](https://github.com/cepdnaclk/e17-co328-Greenhouse-Monitoring-System/blob/main/docs/images/camerasystem.PNG)
 
+## Solution Architecture
+
+
 ## Team
 - Rupasinghe T.T.V.N. : E/17/297 : [e17297@eng.pdn.ac.lk](e17297@eng.pdn.ac.lk)
 - Manohara H.T. : E/17/206 :  [e17206@eng.pdn.ac.lk](e17206@eng.pdn.ac.lk)
 - Kalpana M.W.V: E/17/148 : [e17148@eng.pdn.ac.lk](e17148@eng.pdn.ac.lk)
 
+## Scrum Master
+- Ms. Kalani Hansima
+
 ## Product Owners
 - Dr. Asitha Bandaranayake
 - Mr. Prabhath Gunathilake
-
-## Scrum Master
-- Ms. Kalani Hansima
 
 ## Related Links
 - [Project Page](https://cepdnaclk.github.io/e17-co328-Greenhouse-Monitoring-System/)
