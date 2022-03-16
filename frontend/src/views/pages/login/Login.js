@@ -1,5 +1,8 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React, { useState, Suspense } from 'react'
+import { Link, Navigate } from 'react-router-dom'
+
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+
 import {
   CButton,
   CCard,
@@ -16,7 +19,29 @@ import {
 import CIcon from '@coreui/icons-react'
 import { cilLockLocked, cilUser } from '@coreui/icons'
 
+import axios from 'axios';
+import DefaultLayout from 'src/layout/DefaultLayout'
+
+
 const Login = () => {
+  const [username, setUsername] = useState('');
+  const [password, setPassword] = useState('');
+
+  var credentials = {
+    username: username,
+    password: password
+  };
+
+  const authenticateUser = ()=> {
+    axios.post('http://localhost:3000/users/login', credentials)
+    .then((res)=> {
+      console.log(res.data);
+      if (res.data.success) {
+        window.location = '/dashboard'
+      }
+    })
+  }
+
   return (
     <div className="bg-light min-vh-100 d-flex flex-row align-items-center">
       <CContainer>
@@ -32,13 +57,14 @@ const Login = () => {
                       <CInputGroupText>
                         <CIcon icon={cilUser} />
                       </CInputGroupText>
-                      <CFormInput placeholder="Username" autoComplete="username" />
+                      <CFormInput value={username} onChange={(e)=>setUsername(e.target.value)} placeholder="Username" autoComplete="username" />
                     </CInputGroup>
                     <CInputGroup className="mb-4">
                       <CInputGroupText>
                         <CIcon icon={cilLockLocked} />
                       </CInputGroupText>
                       <CFormInput
+                        value={password} onChange={(e)=>setPassword(e.target.value)}
                         type="password"
                         placeholder="Password"
                         autoComplete="current-password"
@@ -46,7 +72,7 @@ const Login = () => {
                     </CInputGroup>
                     <CRow>
                       <CCol xs={6}>
-                        <CButton color="primary" className="px-4">
+                        <CButton onClick={authenticateUser} color="primary" className="px-4">
                           Login
                         </CButton>
                       </CCol>
@@ -59,7 +85,7 @@ const Login = () => {
                   </CForm>
                 </CCardBody>
               </CCard>
-              <CCard className="text-white bg-primary py-5" style={{ width: '44%' }}>
+              {/* <CCard className="text-white bg-primary py-5" style={{ width: '44%' }}>
                 <CCardBody className="text-center">
                   <div>
                     <h2>Sign up</h2>
@@ -74,7 +100,7 @@ const Login = () => {
                     </Link>
                   </div>
                 </CCardBody>
-              </CCard>
+              </CCard> */}
             </CCardGroup>
           </CCol>
         </CRow>
