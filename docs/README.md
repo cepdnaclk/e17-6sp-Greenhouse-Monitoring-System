@@ -59,7 +59,7 @@ Functionalities of the system
 
 ## System Modelling - Use Case Diagram
 ![](https://github.com/cepdnaclk/e17-co328-Greenhouse-Monitoring-System/blob/main/docs/images/use_case_1.PNG)
-![](https://github.com/cepdnaclk/e17-co328-Greenhouse-Monitoring-System/blob/main/docs/images/use_case_2.png)
+![](https://github.com/cepdnaclk/e17-co328-Greenhouse-Monitoring-System/blob/main/docs/images/use_case_2.PNG)
 
 ## Team
 -  E/17/297, Rupasinghe T.T.V.N., [e17297@eng.pdn.ac.lk](mailto:e17297@eng.pdn.ac.lk)
