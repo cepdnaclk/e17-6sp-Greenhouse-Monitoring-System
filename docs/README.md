@@ -55,10 +55,11 @@ Functionalities of the system
 5. Data Visualization
 6. Data Prediction and generate reports
 
-![](https://github.com/cepdnaclk/e17-co328-Greenhouse-Monitoring-System/blob/main/docs/images/architecture.PNG)
+![](https://github.com/cepdnaclk/e17-co328-Greenhouse-Monitoring-System/blob/main/docs/images/high_level_diagram.PNG)
 
 ## System Modelling - Use Case Diagram
-
+![](https://github.com/cepdnaclk/e17-co328-Greenhouse-Monitoring-System/blob/main/docs/images/use_case_1.PNG)
+![](https://github.com/cepdnaclk/e17-co328-Greenhouse-Monitoring-System/blob/main/docs/images/use_case_2.png)
 
 ## Team
 -  E/17/297, Rupasinghe T.T.V.N., [e17297@eng.pdn.ac.lk](mailto:e17297@eng.pdn.ac.lk)
