@@ -76,50 +76,50 @@ Functionalities of the system
 - In the future according to new requirements, system should be scalable from features and performance.
 
 ### Use Case Diagram
-![Use Case](./images/use_case_1.PNG)
+![Use Case](./images/use case diagram.PNG)
 
 ## Software Design
 ### User's Application Data Flow
-![Web App Data Flow](./images/use_case_1.PNG)
+![Web App Data Flow](./images/we_app_data_flow.PNG)
 
 ### User Interfaces
 1. Login
 - Greenhouse workers can login to the system by entering username and password.
-![Login](./images/use_case_1.PNG)
+![Login](./images/login.PNG)
 
 2. Dashboard
 - User can monitor the overall status of greenhouse.
 - User can see what plants have problems in the greenhouse layout panel. and if user clicks the layout it will navigate to the Overview User Interface.
-![Dashboard](./images/use_case_1.PNG)
+![Dashboard](./images/dashboard.PNG)
 
 3. Overview
 - User can monitor all plants at once.
-![Overview](./images/use_case_1.PNG)
+![Overview](./images/overview.PNG)
 
 4. One Plant Overview
 - User can monitor only one plant.
 - If user needs to see the diseases, growth and harvest status of that plant, he can click those options in the user interface.
-![One Plant Overview](./images/use_case_1.PNG)
+![One Plant Overview](./images/one_plant_overview.PNG)
 
 5. Leaf Diseases
 - If the plant has any disease it will be shown in this interface.
-![Diseases](./images/use_case_1.PNG)
+![Diseases](./images/diseases.PNG)
 
 6. Plant Growth
 - The plant growth can be monitored here.
-![Growth](./images/use_case_1.PNG)
+![Growth](./images/growth.PNG)
 
 7. Crop Harvest
 - The plant harvest status can be seen here.
-![Harvest](./images/use_case_1.PNG)
+![Harvest](./images/harvest.PNG)
 
 8. Predictions
 - The predictions of diseases, growth, harvest of each plant can be monitored here.
-![Predictions](./images/use_case_1.PNG)
+![Predictions](./images/predictions.PNG)
 
 9. Reports
 - The reports of the greenhouse system status can be seen and downloaded from here.
-![Reports](./images/use_case_1.PNG)
+![Reports](./images/reports.PNG)
 
 ## Machine Learning Model
 - The main target of ML model is to predict the specific two features for a given time period.
@@ -127,30 +127,30 @@ Functionalities of the system
 
 ### Leaf Diseases Detection
 - We define 10 different kinds of leaf diseases.
-- - Tomatomosaicvirus
-- - Target_Spot
-- - Bacterial_spot
-- - TomatoYellowLeafCurlVirus
-- - Late_blight
-- - Leaf_Mold
-- - Early_blight
-- - Spidermites Two-spottedspider_mite
-- - Tomato___healthy
-- - Septorialeafspot
+  - Tomatomosaicvirus
+  - Target_Spot
+  - Bacterial_spot
+  - TomatoYellowLeafCurlVirus
+  - Late_blight
+  - Leaf_Mold
+  - Early_blight
+  - Spidermites Two-spottedspider_mite
+  - Tomato___healthy
+  - Septorialeafspot
 
 #### Leaf DIseases Model Architecture
-![Leaf_Diseases Model](./images/leaf_diseases_model.png)
+![Leaf_Diseases Model](./images/leaf_diseases_model.PNG)
 
 ### Crop Harvest Stage Prediction
 - Separate fruits from the given images.
 - Detect Average color
 - Predict the crop harvest stage and count number of fruits according to the color bar.
 
-![Crop Harvest](./images/leaf_diseases_model.png)
+![Crop Harvest](./images/harvest_stage_model.PNG)
 
 ### Test Results
 #### Leaf Diseases Model
-![Test Results 1](./images/leaf_diseases_model.png)
+![Test Results 1](./images/test_results_1.PNG)
 
 ## Team
 -  E/17/297, Rupasinghe T.T.V.N., [e17297@eng.pdn.ac.lk](mailto:e17297@eng.pdn.ac.lk)
