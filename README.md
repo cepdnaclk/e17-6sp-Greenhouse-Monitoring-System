@@ -8,7 +8,6 @@ ___
 3. [Solution](#solution)
 4. [Solution Architecture](#solution_architecture)
 5. [Team](#team)
-6. [Product Owners](#product_owners)
 7. [Links](#links)
 
 ## Overview
