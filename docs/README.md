@@ -20,7 +20,7 @@ title: Greenhouse Monitoring System
 3. [Our Solution](#our-solution)
 4. [System Modelling](#system-modelling)
 5. [Solution Architecture](#solution-architecture)
-6. [Machine Learning Modle](#machine-learning-model)
+6. [Machine Learning Model](#machine-learning-model)
 7. [Team](#team)
 8. [Links](#links)
 
@@ -84,6 +84,7 @@ Plant diseases, huge harvest wastage and unnecessary expensive maintenance have 
 ![high_level_diagram](./images/high_level_diagram.PNG)
 
 ### System Overview with Technology Stack
+![Technology Stack](./images/technology_stack.PNG)
 
 ## Software Design
 ### User's Application Data Flow
