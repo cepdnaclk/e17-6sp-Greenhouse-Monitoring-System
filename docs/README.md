@@ -39,12 +39,12 @@ Although the environmental conditions of plants are controlled, the temporal eff
 
 In current greenhouses, the workers continuously observe the plant growth. In that case, workers will be tired and labor system would be inefficient. So, there would be an unnecessary higher cost for maintenance.
 
-![](https://github.com/cepdnaclk/e17-co328-Greenhouse-Monitoring-System/blob/main/docs/images/problems.png)
+![Problems](./images/problems.png)
 
 ## Solution
 Plant diseases, huge harvest wastage and unnecessary expensive maintenance have been observed as the major issues in current Greenhouse Systems. These key problems simulated the development of image analysis and computer vision methods. That's how the "greenhouse monitoring system based on image spectral data" came to the stage.
 
-![](https://github.com/cepdnaclk/e17-co328-Greenhouse-Monitoring-System/blob/main/docs/images/camerasystem.PNG)
+![solution](./images/camerasystem.PNG)
 
 ## Solution Architecture
 Functionalities of the system
@@ -55,11 +55,102 @@ Functionalities of the system
 5. Data Visualization
 6. Data Prediction and generate reports
 
-![](https://github.com/cepdnaclk/e17-co328-Greenhouse-Monitoring-System/blob/main/docs/images/high_level_diagram.PNG)
+![high_level_diagram](./images/high_level_diagram.PNG)
 
-## System Modelling - Use Case Diagram
-![](https://github.com/cepdnaclk/e17-co328-Greenhouse-Monitoring-System/blob/main/docs/images/use_case_1.PNG)
-![](https://github.com/cepdnaclk/e17-co328-Greenhouse-Monitoring-System/blob/main/docs/images/use_case_2.PNG)
+## System Modelling
+
+### Functional Requirements
+- System updates per one hour with new plants images according to the given video file.
+- Monitor the diseases, crop harvest and growth plant by plant.
+- When displaying the features of the system, user should be able to select plant according to their labels.
+- If any error occurred in the system, it should be displayed as an alert.
+- When the crop should be harvest at the moment, user should be notified it.
+- Monitor the future greenhouse status of the features.
+- Reports should be generated and they should be able to download.
+
+### Non-Functional Requirements
+- Interfaces should be user friendly.
+- Performance with response time should be efficient.
+- The System Predictions of the Machine Learning Model shoud be reliable.
+- The security of the system should be high.
+- In the future according to new requirements, system should be scalable from features and performance.
+
+### Use Case Diagram
+![Use Case](./images/use_case_1.PNG)
+
+## Software Design
+### User's Application Data Flow
+![Web App Data Flow](./images/use_case_1.PNG)
+
+### User Interfaces
+1. Login
+- Greenhouse workers can login to the system by entering username and password.
+![Login](./images/use_case_1.PNG)
+
+2. Dashboard
+- User can monitor the overall status of greenhouse.
+- User can see what plants have problems in the greenhouse layout panel. and if user clicks the layout it will navigate to the Overview User Interface.
+![Dashboard](./images/use_case_1.PNG)
+
+3. Overview
+- User can monitor all plants at once.
+![Overview](./images/use_case_1.PNG)
+
+4. One Plant Overview
+- User can monitor only one plant.
+- If user needs to see the diseases, growth and harvest status of that plant, he can click those options in the user interface.
+![One Plant Overview](./images/use_case_1.PNG)
+
+5. Leaf Diseases
+- If the plant has any disease it will be shown in this interface.
+![Diseases](./images/use_case_1.PNG)
+
+6. Plant Growth
+- The plant growth can be monitored here.
+![Growth](./images/use_case_1.PNG)
+
+7. Crop Harvest
+- The plant harvest status can be seen here.
+![Harvest](./images/use_case_1.PNG)
+
+8. Predictions
+- The predictions of diseases, growth, harvest of each plant can be monitored here.
+![Predictions](./images/use_case_1.PNG)
+
+9. Reports
+- The reports of the greenhouse system status can be seen and downloaded from here.
+![Reports](./images/use_case_1.PNG)
+
+## Machine Learning Model
+- The main target of ML model is to predict the specific two features for a given time period.
+- The features are crop harvest stage and leaf diseases.
+
+### Leaf Diseases Detection
+- We define 10 different kinds of leaf diseases.
+- - Tomatomosaicvirus
+- - Target_Spot
+- - Bacterial_spot
+- - TomatoYellowLeafCurlVirus
+- - Late_blight
+- - Leaf_Mold
+- - Early_blight
+- - Spidermites Two-spottedspider_mite
+- - Tomato___healthy
+- - Septorialeafspot
+
+#### Leaf DIseases Model Architecture
+![Leaf_Diseases Model](./images/leaf_diseases_model.png)
+
+### Crop Harvest Stage Prediction
+- Separate fruits from the given images.
+- Detect Average color
+- Predict the crop harvest stage and count number of fruits according to the color bar.
+
+![Crop Harvest](./images/leaf_diseases_model.png)
+
+### Test Results
+#### Leaf Diseases Model
+![Test Results 1](./images/leaf_diseases_model.png)
 
 ## Team
 -  E/17/297, Rupasinghe T.T.V.N., [e17297@eng.pdn.ac.lk](mailto:e17297@eng.pdn.ac.lk)
