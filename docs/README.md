@@ -18,11 +18,7 @@ title: Greenhouse Monitoring System
 1. [Introduction](#introduction)
 2. [Problem Statement](#problem-statement)
 3. [Our Solution](#our-solution)
-4. [System Modelling](#system-modelling)
-5. [Solution Architecture](#solution-architecture)
-6. [Machine Learning Model](#machine-learning-model)
-7. [Team](#team)
-8. [Links](#links)
+4. [Links](#links)
 
 ---
 
@@ -51,6 +47,17 @@ Plant diseases, huge harvest wastage and unnecessary expensive maintenance have 
 ![solution](./images/camerasystem.PNG)
 
 
+## Solution Architecture
+### System Functionalities
+1. Extract images from the video file.
+2. Extract features from images.
+3. Store those images and features in a database.
+4. Data processing and data analysis using ML Model
+5. Data Visualization
+6. Data Prediction and generate reports
+
+![high_level_diagram](./images/high_level_diagram.PNG)
+
 ## System Modelling
 
 ### Functional Requirements
@@ -71,20 +78,6 @@ Plant diseases, huge harvest wastage and unnecessary expensive maintenance have 
 
 ### Use Case Diagram
 ![Use Case](./images/usecase_diagram.PNG)
-
-## Solution Architecture
-### System Functionalities
-1. Extract images from the video file.
-2. Extract features from images.
-3. Store those images and features in a database.
-4. Data processing and data analysis using ML Model
-5. Data Visualization
-6. Data Prediction and generate reports
-
-![high_level_diagram](./images/high_level_diagram.PNG)
-
-### System Overview with Technology Stack
-![Technology Stack](./images/technology_stack.PNG)
 
 ## Software Design
 ### User's Application Data Flow
@@ -161,17 +154,9 @@ Plant diseases, huge harvest wastage and unnecessary expensive maintenance have 
 ![Test Results 1](./images/test_results_1.PNG)
 
 ## Team
-### Developers
 -  E/17/297, Rupasinghe T.T.V.N., [e17297@eng.pdn.ac.lk](mailto:e17297@eng.pdn.ac.lk)
 -  E/17/206, Manohara H.T., [e17206@eng.pdn.ac.lk](mailto:e17206@eng.pdn.ac.lk)
 -  E/17/148, Kalpana M. W. V., [e17148@eng.pdn.ac.lk](mailto:e17148@eng.pdn.ac.lk)
-
-### Scrum Master
-- Ms. Kalani Hansima
-
-### Product Owners
-- Dr. Asitha Bandaranayake
-- Mr. Prabhath Gunathilake
 
 ## Links
 
