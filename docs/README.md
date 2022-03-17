@@ -76,7 +76,7 @@ Functionalities of the system
 - In the future according to new requirements, system should be scalable from features and performance.
 
 ### Use Case Diagram
-![Use Case](./images/use case diagram.PNG)
+![Use Case](./images/use_case_diagram.PNG)
 
 ## Software Design
 ### User's Application Data Flow
