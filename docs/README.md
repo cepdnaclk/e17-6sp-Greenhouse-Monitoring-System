@@ -76,11 +76,11 @@ Functionalities of the system
 - In the future according to new requirements, system should be scalable from features and performance.
 
 ### Use Case Diagram
-![Use Case](./images/use_case_diagram.PNG)
+![Use Case](./images/usecase_diagram.PNG)
 
 ## Software Design
 ### User's Application Data Flow
-![Web App Data Flow](./images/we_app_data_flow.PNG)
+![Web App Data Flow](./images/app_data_flow.PNG)
 
 ### User Interfaces
 1. Login
@@ -146,7 +146,7 @@ Functionalities of the system
 - Detect Average color
 - Predict the crop harvest stage and count number of fruits according to the color bar.
 
-![Crop Harvest](./images/harvest_stage_model.PNG)
+![Crop Harvest](./images/harvest_stage_ml_model.PNG)
 
 ### Test Results
 #### Leaf Diseases Model
