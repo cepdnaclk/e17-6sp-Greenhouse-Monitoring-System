@@ -17,8 +17,13 @@ title: Greenhouse Monitoring System
 ## Table of Contents
 1. [Introduction](#introduction)
 2. [Problem Statement](#problem-statement)
-3. [Solution](#solution)
-4. [Links](#links)
+3. [Our Solution](#our-solution)
+4. [System Modelling](#system-modelling)
+5. [Solution Architecture](#solution-architecture)
+6. [Software Design](#software-design)
+7. [Machine Learning Model](#machine-learning-model)
+8. [Team](#team)
+9. [Links](#links)
 
 ---
 
@@ -41,21 +46,11 @@ In current greenhouses, the workers continuously observe the plant growth. In th
 
 ![Problems](./images/problems.png)
 
-## Solution
+## Our Solution
 Plant diseases, huge harvest wastage and unnecessary expensive maintenance have been observed as the major issues in current Greenhouse Systems. These key problems simulated the development of image analysis and computer vision methods. That's how the "greenhouse monitoring system based on image spectral data" came to the stage.
 
 ![solution](./images/camerasystem.PNG)
 
-## Solution Architecture
-Functionalities of the system
-1. Extract images from the video file.
-2. Extract features from images.
-3. Store those images and features in a database.
-4. Data processing and data analysis using ML Model
-5. Data Visualization
-6. Data Prediction and generate reports
-
-![high_level_diagram](./images/high_level_diagram.PNG)
 
 ## System Modelling
 
@@ -77,6 +72,20 @@ Functionalities of the system
 
 ### Use Case Diagram
 ![Use Case](./images/usecase_diagram.PNG)
+
+## Solution Architecture
+### System Functionalities
+1. Extract images from the video file.
+2. Extract features from images.
+3. Store those images and features in a database.
+4. Data processing and data analysis using ML Model
+5. Data Visualization
+6. Data Prediction and generate reports
+
+![high_level_diagram](./images/high_level_diagram.PNG)
+
+### System Overview with Technology Stack
+![Technology Stack](./images/technology_stack.PNG)
 
 ## Software Design
 ### User's Application Data Flow
@@ -153,9 +162,17 @@ Functionalities of the system
 ![Test Results 1](./images/test_results_1.PNG)
 
 ## Team
+### Developers
 -  E/17/297, Rupasinghe T.T.V.N., [e17297@eng.pdn.ac.lk](mailto:e17297@eng.pdn.ac.lk)
 -  E/17/206, Manohara H.T., [e17206@eng.pdn.ac.lk](mailto:e17206@eng.pdn.ac.lk)
 -  E/17/148, Kalpana M. W. V., [e17148@eng.pdn.ac.lk](mailto:e17148@eng.pdn.ac.lk)
+
+### Scrum Master
+- Ms. Kalani Hansima
+
+### Product Owners
+- Dr. Asitha Bandaranayake
+- Mr. Prabhath Gunathilake
 
 ## Links
 
