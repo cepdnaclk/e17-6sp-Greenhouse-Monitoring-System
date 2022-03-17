@@ -18,9 +18,8 @@ title: Greenhouse Monitoring System
 1. [Introduction](#introduction)
 2. [Problem Statement](#problem-statement)
 3. [Our Solution](#our-solution)
-4. [System Modelling](#system-modelling)
-5. [Team](#team)
-6. [Links](#links)
+4. [Team](#team)
+5. [Links](#links)
 
 ---
 
@@ -159,15 +158,14 @@ Plant diseases, huge harvest wastage and unnecessary expensive maintenance have 
 ![Test Results 1](./images/test_results_1.PNG)
 
 ## Team
-### Developers
 -  E/17/297, Rupasinghe T.T.V.N., [e17297@eng.pdn.ac.lk](mailto:e17297@eng.pdn.ac.lk)
 -  E/17/206, Manohara H.T., [e17206@eng.pdn.ac.lk](mailto:e17206@eng.pdn.ac.lk)
 -  E/17/148, Kalpana M. W. V., [e17148@eng.pdn.ac.lk](mailto:e17148@eng.pdn.ac.lk)
 
-### Scrum Master
+## Scrum Master
 - Ms. Kalani Hansima
 
-### Product Owners
+## Product Owners
 - Dr. Asitha Bandaranayake
 - Mr. Prabhath Gunathilake
 
