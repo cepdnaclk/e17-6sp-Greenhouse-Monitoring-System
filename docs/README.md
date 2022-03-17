@@ -18,8 +18,11 @@ title: Greenhouse Monitoring System
 1. [Introduction](#introduction)
 2. [Problem Statement](#problem-statement)
 3. [Our Solution](#our-solution)
-4. [Team](#team)
-5. [Links](#links)
+4. [System Modelling](#system-modelling)
+5. [Solution Architecture](#solution-architecture)
+6. [Machine Learning Modle](#machine-learning-model)
+7. [Team](#team)
+8. [Links](#links)
 
 ---
 
@@ -81,7 +84,6 @@ Plant diseases, huge harvest wastage and unnecessary expensive maintenance have 
 ![high_level_diagram](./images/high_level_diagram.PNG)
 
 ### System Overview with Technology Stack
-![Technology Stack](./images/technology_stack.PNG)
 
 ## Software Design
 ### User's Application Data Flow
@@ -158,14 +160,15 @@ Plant diseases, huge harvest wastage and unnecessary expensive maintenance have 
 ![Test Results 1](./images/test_results_1.PNG)
 
 ## Team
+### Developers
 -  E/17/297, Rupasinghe T.T.V.N., [e17297@eng.pdn.ac.lk](mailto:e17297@eng.pdn.ac.lk)
 -  E/17/206, Manohara H.T., [e17206@eng.pdn.ac.lk](mailto:e17206@eng.pdn.ac.lk)
 -  E/17/148, Kalpana M. W. V., [e17148@eng.pdn.ac.lk](mailto:e17148@eng.pdn.ac.lk)
 
-## Scrum Master
+### Scrum Master
 - Ms. Kalani Hansima
 
-## Product Owners
+### Product Owners
 - Dr. Asitha Bandaranayake
 - Mr. Prabhath Gunathilake
 
