@@ -19,11 +19,8 @@ title: Greenhouse Monitoring System
 2. [Problem Statement](#problem-statement)
 3. [Our Solution](#our-solution)
 4. [System Modelling](#system-modelling)
-5. [Solution Architecture](#solution-architecture)
-6. [Software Design](#software-design)
-7. [Machine Learning Model](#machine-learning-model)
-8. [Team](#team)
-9. [Links](#links)
+5. [Team](#team)
+6. [Links](#links)
 
 ---
 
