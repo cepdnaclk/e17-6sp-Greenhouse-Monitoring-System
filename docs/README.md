@@ -9,7 +9,7 @@ title: "Analysis and Prediction of Greenhouse monitoring and controlling based o
 
 [comment]: # "This is the standard layout for the project, but you can clean this and use your own template"
 
-# Project Title
+# Analysis and Prediction of Greenhouse monitoring and controlling based on Image Spectral data
 
 ---
 
