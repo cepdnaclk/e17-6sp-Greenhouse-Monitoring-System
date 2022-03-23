@@ -43,7 +43,7 @@ const index = () => {
           <CCard style={{ height: '18rem', width: '18rem' }}>
             <CCardImage orientation="top" src={A0} style={{ height: '15rem', width: '18rem' }}/>
               <CCardBody>
-                <CButton href="#">A0</CButton>
+                <CButton href="./one_plant_overview">A0</CButton>
               </CCardBody>
           </CCard>
         </CCol>
