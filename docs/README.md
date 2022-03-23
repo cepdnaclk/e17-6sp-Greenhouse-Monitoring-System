@@ -161,15 +161,15 @@ Plant diseases, huge harvest wastage and unnecessary expensive maintenance have 
 ![test_results_1](./images/test_results_1.PNG)
 
 ## Team
-### Developers
+#### Developers
 -  E/17/297, Rupasinghe T.T.V.N., [e17297@eng.pdn.ac.lk](mailto:e17297@eng.pdn.ac.lk)
 -  E/17/206, Manohara H.T., [e17206@eng.pdn.ac.lk](mailto:e17206@eng.pdn.ac.lk)
 -  E/17/148, Kalpana M. W. V., [e17148@eng.pdn.ac.lk](mailto:e17148@eng.pdn.ac.lk)
 
-### Scrum Master
+#### Scrum Master
 - Ms. Kalani Hansima
 
-### Product Owners
+#### Product Owners
 - Dr. Asitha Bandaranayake
 - Mr. Prabhath Gunathilake
 
