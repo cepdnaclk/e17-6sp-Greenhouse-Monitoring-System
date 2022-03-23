@@ -54,6 +54,11 @@ const Widgets = React.lazy(() => import('./views/widgets/Widgets'))
 const _dashboard = React.lazy(() => import('./views/_dashboard'))
 const overview = React.lazy(() => import('./views/overview'))
 const one_plant_overview = React.lazy(() => import('./views/one_plant_overview'))
+const diseases = React.lazy(() => import('./views/diseases'))
+const growth = React.lazy(() => import('./views/growth'))
+const harvest = React.lazy(() => import('./views/harvest'))
+const predictions = React.lazy(() => import('./views/predictions'))
+const reports = React.lazy(() => import('./views/reports'))
 
 const routes = [
   { path: '/', exact: true, name: 'Home' },
@@ -103,6 +108,11 @@ const routes = [
   { path: '/_dashboard', name: 'Dashboard', element: _dashboard, exact: true },
   { path: '/overview', name: 'Overview', element: overview },
   { path: '/one_plant_overview', name: 'One Plant Overview', element: one_plant_overview },
+  { path: '/diseases', name: 'Diseases', element: diseases },
+  { path: '/growth', name: 'Plant Growth', element: growth },
+  { path: '/harvest', name: 'Crop Harvest', element: harvest },
+  { path: '/predictions', name: 'Predictions', element: predictions },
+  { path: '/reports', name: 'Reports', element: reports },
 ]
 
 export default routes
