@@ -52,7 +52,7 @@
 <td valign="top">PUT</td>
 <td valign="top">/updateinfo</td>
 <td valign="top">Body:accessToken</td>
-<td valign="top"><span style="color:green">Success:</span><br>StatusCode: 200<br>Message : <br>Body:<br>
+<td valign="top"><span style="color:green">Success:</span><br>StatusCode: 200<br>Message : Updated Successfully<br>Body:<br>
 <br><span style="color:red">Failure:</span><br>Status Code: 403</td>
 </tr>
 
@@ -70,8 +70,8 @@ The Camera System should be triggered for a defined frequency. The frequency mea
 <td valign="top">Set Plant Focus Time </td>
 <td valign="top">POST</td>
 <td valign="top">/</td>
-<td valign="top">Body:accessToken, frequency</td>
-<td valign="top"><span style="color:green">Success:</span><br>StatusCode: 200<br>Message : One Plant Focus time succesfully updated! <br>Body:<br>
+<td valign="top">Body:accessToken, plant_focus_time</td>
+<td valign="top"><span style="color:green">Success:</span><br>StatusCode: 200<br>Message : One Plant Focus time for the camera system succesfully updated! <br>Body:<br>
 <br><span style="color:red">Failure:</span><br>Status Code: 403</td>
 </tr>
 
@@ -79,9 +79,9 @@ The Camera System should be triggered for a defined frequency. The frequency mea
 
 
 #### Features
-- Get Grennhouse overall crop yeild.
-- Get One plant crop yeild.
-- Get All Leaf Diseases of all the plants in the greenhouse.
+- Get Grennhouse overall crop yeild as a percentage.
+- Get One plant crop yeild Stage.
+- Get All Leaf Diseases of all the plants as a list.
 - Get Leaf Diseases of one plant.
 <br>
 
@@ -141,7 +141,7 @@ Upload the images which were extracted from the video file.
 <td valign="top">POST</td>
 <td valign="top">/</td>
 <td valign="top">Body:accessToken, [[image , plant_id]]</td>
-<td valign="top"><span style="color:green">Success:</span><br>StatusCode: 200<br>Message : Images uploaded successfully <br>Body:<br>
+<td valign="top"><span style="color:green">Success:</span><br>StatusCode: 200<br>Message : Images uploaded successfully! <br>Body:<br>
 <br><span style="color:red">Failure:</span><br>Status Code: 403</td>
 </tr>
 
