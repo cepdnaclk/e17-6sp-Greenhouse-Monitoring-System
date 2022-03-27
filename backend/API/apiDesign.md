@@ -1,4 +1,5 @@
 Authentication and Authorization
+<br>
 **/users**
 <table>
 
@@ -47,6 +48,14 @@ Authentication and Authorization
 <td valign="top"><span style="color:green">Success:</span><br>StatusCode: 200<br>Message : <br>Body:<br>
 <br><span style="color:red">Failure:</span><br>Status Code: 403</td>
 </tr>
+
+</table>  
+
+Predictions
+<br>
+**/predictions**
+
+<table>
 
 <tr>
 <td valign="top">Get Predications</td>
