@@ -1,5 +1,12 @@
-Authentication and Authorization
+# Greenhouse Monitoring System Based on Image Spectral Data
+## API Documentation
+#### Authentication and Authorization
+- Login to the System by entering username and password. The username and password are authenticated and authorized.
+- Logout from the system.
+- Get user information.
+- Update user information.
 <br>
+
 **/users**
 <table>
 
@@ -51,26 +58,33 @@ Authentication and Authorization
 
 </table>  
 
-Set Frequency 
+#### Set One Plant Focus Time
+The Camera System should be triggered for a defined frequency. The frequency means that like for 1 hour how many cycles the camera system go around the plants in greenhouse. And also the time to be focused for one plant also should be defined. By using one plant focus time we can calculate the frequency of the camera system.
 <br>
-**/set-frequency**
+
+**/set-plant-focus-time**
 
 <table>
 
 <tr>
-<td valign="top">Set Frequency </td>
+<td valign="top">Set Plant Focus Time </td>
 <td valign="top">POST</td>
 <td valign="top">/</td>
 <td valign="top">Body:accessToken, frequency</td>
-<td valign="top"><span style="color:green">Success:</span><br>StatusCode: 200<br>Message : Frequency succesfully updated! <br>Body:<br>
+<td valign="top"><span style="color:green">Success:</span><br>StatusCode: 200<br>Message : One Plant Focus time succesfully updated! <br>Body:<br>
 <br><span style="color:red">Failure:</span><br>Status Code: 403</td>
 </tr>
 
 </table>
 
 
-Features
+#### Features
+- Get Grennhouse overall crop yeild.
+- Get One plant crop yeild.
+- Get All Leaf Diseases of all the plants in the greenhouse.
+- Get Leaf Diseases of one plant.
 <br>
+
 **/features**
 
 <table>
@@ -114,8 +128,10 @@ Features
 </table>
 
 
-Upload Images
+#### Upload Images
+Upload the images which were extracted from the video file.
 <br>
+
 **/upload-images**
 
 <table>
