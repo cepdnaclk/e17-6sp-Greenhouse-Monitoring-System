@@ -51,22 +51,83 @@ Authentication and Authorization
 
 </table>  
 
-Predictions
+Set Frequency 
 <br>
-**/predictions**
+**/set-frequency**
 
 <table>
 
 <tr>
-<td valign="top">Get Predications</td>
+<td valign="top">Set Frequency </td>
 <td valign="top">POST</td>
-<td valign="top">/getpredict</td>
-<td valign="top">Body:accessToken, image</td>
-<td valign="top"><span style="color:green">Success:</span><br>StatusCode: 200<br>Message : <br>Body:<br>
+<td valign="top">/</td>
+<td valign="top">Body:accessToken, frequency</td>
+<td valign="top"><span style="color:green">Success:</span><br>StatusCode: 200<br>Message : Frequency succesfully updated! <br>Body:<br>
 <br><span style="color:red">Failure:</span><br>Status Code: 403</td>
 </tr>
 
 </table>
 
 
+Features
+<br>
+**/features**
+
+<table>
+
+<tr>
+<td valign="top">Get Crop Yield</td>
+<td valign="top">GET</td>
+<td valign="top">/get-yield</td>
+<td valign="top">Body:accessToken </td>
+<td valign="top"><span style="color:green">Success:</span><br>StatusCode: 200 <br>Body:crop_yield% <br>
+<br><span style="color:red">Failure:</span><br>Status Code: 403</td>
+</tr>
+  
+<tr>
+<td valign="top">Get Crop Yield of a plant</td>
+<td valign="top">GET</td>
+<td valign="top">/get-yield/:plantID</td>
+<td valign="top">Body:accessToken </td>
+<td valign="top"><span style="color:green">Success:</span><br>StatusCode: 200 <br>Body:crop_yield_stage<br>
+<br><span style="color:red">Failure:</span><br>Status Code: 403</td>
+</tr>
+  
+<tr>
+<td valign="top">Get Leaf Disease</td>
+<td valign="top">GET</td>
+<td valign="top">/get-disease</td>
+<td valign="top">Body:accessToken </td>
+<td valign="top"><span style="color:green">Success:</span><br>StatusCode: 200 <br>Body:[[plantID, [disease]]] <br>
+<br><span style="color:red">Failure:</span><br>Status Code: 403</td>
+</tr>
+  
+<tr>
+<td valign="top">Get Leaf Disease of a plant</td>
+<td valign="top">GET</td>
+<td valign="top">/get-disease/:plantID</td>
+<td valign="top">Body:accessToken </td>
+<td valign="top"><span style="color:green">Success:</span><br>StatusCode: 200 <br>Body:[plantID, [disease]] <br>
+<br><span style="color:red">Failure:</span><br>Status Code: 403</td>
+</tr>
+
+</table>
+
+
+Upload Images
+<br>
+**/upload-images**
+
+<table>
+
+<tr>
+<td valign="top">Upload Images</td>
+<td valign="top">POST</td>
+<td valign="top">/</td>
+<td valign="top">Body:accessToken, [[image , plant_id]]</td>
+<td valign="top"><span style="color:green">Success:</span><br>StatusCode: 200<br>Message : Images uploaded successfully <br>Body:<br>
+<br><span style="color:red">Failure:</span><br>Status Code: 403</td>
+</tr>
+
+</table>
 
