@@ -11,6 +11,7 @@ var config = require('./config');
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
+var featuresRouter = require('./routes/featuresRouter');
 
 const mongoose = require('mongoose');
 mongoose.Promise = Promise;
@@ -66,6 +67,7 @@ app.use(function(req, res, next) {
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
+app.use('/features', featuresRouter);
 
 //auth middleware
 app.use(auth);
