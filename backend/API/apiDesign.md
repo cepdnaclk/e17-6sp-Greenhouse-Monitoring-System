@@ -68,7 +68,7 @@ The Camera System should be triggered for a defined frequency. The frequency mea
 
 <tr>
 <td valign="top">Set Frequency </td>
-<td valign="top">POST</td>
+<td valign="top">PUT</td>
 <td valign="top">/</td>
 <td valign="top">Body:accessToken, frequency</td>
 <td valign="top"><span style="color:green">Success:</span><br>StatusCode: 200<br>Message : Frequency succesfully updated! <br>Body:<br>
