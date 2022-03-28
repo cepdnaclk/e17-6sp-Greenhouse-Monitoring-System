@@ -28,6 +28,8 @@ router.get('/get-yield/:plantID', authenticate.verifyUser, (req, res) =>{
     res.json({success: true, status: 'user details /get-yield/'+req.params.plantID});
 });
 
+
+
 // for leaf disease
 router.get('/get-disease', authenticate.verifyUser, (req, res) =>{
     res.statusCode = 200;
