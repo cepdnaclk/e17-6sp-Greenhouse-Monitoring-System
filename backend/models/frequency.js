@@ -9,6 +9,6 @@ var Frequency = new Schema({
     } 
 });
 
-User.plugin(passportLocalMongoose);
+Frequency.plugin(passportLocalMongoose);
 
 module.exports = mongoose.model('Frequency', Frequency);
