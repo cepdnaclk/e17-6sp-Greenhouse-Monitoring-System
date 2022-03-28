@@ -7,6 +7,7 @@ var session = require('express-session');
 var FileStore = require('session-file-store')(session);
 var passport = require('passport');
 var authenticate = require('./authenticate');
+var config = require('./config');
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
@@ -15,7 +16,7 @@ const mongoose = require('mongoose');
 mongoose.Promise = Promise;
 
 //mongodb URL
-const url = 'mongodb+srv://vishva:apMNDnRquNU2K9P@cluster0.n0awk.mongodb.net/myFirstDatabase?retryWrites=true&w=majority';
+const url = config.mongoUrl;
 const connect = mongoose.connect(url, {autoIndex: false});
 
 connect.then((db) => {

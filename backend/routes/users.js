@@ -2,6 +2,8 @@ var express = require('express');
 const bodyParser = require('body-parser');
 var User = require('../models/user');
 var passport = require('passport');
+var authenticate = require('../authenticate');
+
 
 var router = express.Router();
 
@@ -32,10 +34,14 @@ router.post('/signup', (req, res, next) => {
 
 //user login
 router.post('/login', passport.authenticate('local'), (req, res) => {
+  var token = authenticate.getToken({_id: req.user._id});
   res.statusCode = 200;
   res.setHeader('Content-Type', 'application/json');
-  res.json({success: true, status: 'You are successfully logged in!'});
+  res.json({success: true,
+            status: 'You are successfully logged in!',
+            token: token});
 });
+
 
 router.get('/logout', (req, res) => {
   if (req.session) {
@@ -48,6 +54,22 @@ router.get('/logout', (req, res) => {
     err.status = 403;
     next(err);
   }
+});
+
+//user profile details route "/getinfo"
+// add midlewares to check authentication
+router.get('/getinfo', authenticate.verifyUser, (req, res) =>{
+  res.statusCode = 200;
+  res.setHeader('Content-Type', 'application/json');
+  res.json({success: true, status: 'user details /getinfo'});
+});
+
+//update user info route "/updateinfo"
+// add midlewares to check authentication
+router.put('/updateinfo', authenticate.verifyUser, (req, res) =>{
+  res.statusCode = 200;
+  res.setHeader('Content-Type', 'application/json');
+  res.json({success: true, status: 'user details updated'});
 });
 
 module.exports = router;
