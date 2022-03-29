@@ -69,7 +69,7 @@ app.use(function(req, res, next) {
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/features', featuresRouter);
-app.use('/set-frequency', setFreqRouter);
+app.use('/frequency', setFreqRouter);
 
 //auth middleware
 app.use(auth);
