@@ -27,7 +27,9 @@ router.put('/', authenticate.verifyUser, (req, res, next) => {
             console.log(req.body.frequency);
             res.statusCode = 200;
             res.setHeader('Content-Type', 'application/json');
-            res.json(frequency);
+            res.json({success: true,
+                status: 'Frequency succesfully updated!',
+                frequency: frequency});
         }, (err) => next(err))
         .catch((err) => next(err));
 })
