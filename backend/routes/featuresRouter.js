@@ -4,6 +4,7 @@ const bodyParser = require('body-parser');
 var passport = require('passport');
 var authenticate = require('../authenticate');
 
+var Plant = require('../models/plant')
 
 var router = express.Router();
 
@@ -17,15 +18,30 @@ router.get('/', function(req, res, next) {
 //user profile details route "/getinfo"
 // add midlewares to check authentication
 router.get('/get-yield', authenticate.verifyUser, (req, res) =>{
-  res.statusCode = 200;
-  res.setHeader('Content-Type', 'application/json');
-  res.json({success: true, status: 'user details /get-yield'});
+
+  var totalYield = 0;
+
+  Plant.find({})
+  .then(plants => {
+    plants.map(plant=>{
+      totalYield += plant.totalYield;
+    });
+
+    res.statusCode = 200;
+    res.setHeader('Content-Type', 'application/json');
+    res.json(totalYield);
+
+  });
+
 });
 
 router.get('/get-yield/:plantID', authenticate.verifyUser, (req, res) =>{
+  Plant.find({plantID: req.params.plantID})
+  .then(plant => {
     res.statusCode = 200;
     res.setHeader('Content-Type', 'application/json');
-    res.json({success: true, status: 'user details /get-yield/'+req.params.plantID});
+    res.json(plant[0].totalYield);
+  });
 });
 
 
