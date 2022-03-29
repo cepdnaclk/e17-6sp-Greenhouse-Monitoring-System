@@ -62,16 +62,26 @@
 The Camera System should be triggered for a defined frequency. The frequency means that like for 1 hour how many cycles the camera system go around the plants in greenhouse. And also the time to be focused for one plant also should be defined. By using one plant focus time we can calculate the frequency of the camera system.
 <br>
 
-**/set-frequency**
+**/frequency**
 
 <table>
+
+<tr>
+<td valign="top">Get Frequency </td>
+<td valign="top">GET</td>
+<td valign="top">/</td>
+<td valign="top">Body:accessToken</td>
+<td valign="top"><span style="color:green">Success:</span><br>StatusCode: 200 <br>
+  Body:frequency <br>
+<br><span style="color:red">Failure:</span><br>Status Code: 403</td>
+</tr>  
 
 <tr>
 <td valign="top">Set Frequency </td>
 <td valign="top">PUT</td>
 <td valign="top">/</td>
 <td valign="top">Body:accessToken, frequency</td>
-<td valign="top"><span style="color:green">Success:</span><br>StatusCode: 200<br>Message : Frequency succesfully updated! <br>Body:<br>
+<td valign="top"><span style="color:green">Success:</span><br>StatusCode: 200<br>Message : Frequency succesfully updated! <br>Body:frequency<br>
 <br><span style="color:red">Failure:</span><br>Status Code: 403</td>
 </tr>
 
