@@ -5,6 +5,7 @@ var passport = require('passport');
 var authenticate = require('../authenticate');
 
 var Plant = require('../models/plant')
+var Disease = require('../models/diseases')
 
 var router = express.Router();
 
@@ -36,6 +37,7 @@ router.get('/get-yield', authenticate.verifyUser, (req, res) =>{
 });
 
 router.get('/get-yield/:plantID', authenticate.verifyUser, (req, res) =>{
+
   Plant.find({plantID: req.params.plantID})
   .then(plant => {
     res.statusCode = 200;
@@ -46,17 +48,39 @@ router.get('/get-yield/:plantID', authenticate.verifyUser, (req, res) =>{
 
 
 
-// for leaf disease
+// Leaf diseases details route ./get-disease
+// get all diseases of all plants
 router.get('/get-disease', authenticate.verifyUser, (req, res) =>{
+  var plantId;
+  var plantDiseases = [];
+
+  Plant.find({})
+  .then(plants => {
+    plants.map(plant=>{
+      plantId = plant.plantID;
+    });
+    plants.map(plant=>{
+      plantDiseases = plant.diseases;
+    });
+
     res.statusCode = 200;
     res.setHeader('Content-Type', 'application/json');
-    res.json({success: true, status: 'user details /get-disease'});
+    res.json(plantId,plantDiseases);
+
   });
-  
-  router.get('/get-disease/:plantID', authenticate.verifyUser, (req, res) =>{
-      res.statusCode = 200;
-      res.setHeader('Content-Type', 'application/json');
-      res.json({success: true, status: 'user details /get-disease/'+req.params.plantID});
-   });
+
+});
+
+// get all diseases of one plant
+router.get('/get-disease/:plantID', authenticate.verifyUser, (req, res) =>{
+  Plant.find({plantID: req.params.plantID})
+  .then(plant => {
+    res.statusCode = 200;
+    res.setHeader('Content-Type', 'application/json');
+    res.json(plant[0].diseases);
+
+  });
+
+});
 
 module.exports = router;
