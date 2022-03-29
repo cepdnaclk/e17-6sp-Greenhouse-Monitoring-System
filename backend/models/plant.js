@@ -11,10 +11,12 @@ var Plant = new Schema({
         type: String
     }],
     totalYield: {
-        type: Number
+        type: Number,
+        default: 0
     },
     yieldToBeHarvested: {
-        type: Number
+        type: Number,
+        default: 0
     }
 });
 
