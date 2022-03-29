@@ -36,9 +36,12 @@ router.get('/get-yield', authenticate.verifyUser, (req, res) =>{
 });
 
 router.get('/get-yield/:plantID', authenticate.verifyUser, (req, res) =>{
+  Plant.find({plantID: req.params.plantID})
+  .then(plant => {
     res.statusCode = 200;
     res.setHeader('Content-Type', 'application/json');
-    res.json({success: true, status: 'user details /get-yield/'+req.params.plantID});
+    res.json(plant[0].totalYield);
+  });
 });
 
 
