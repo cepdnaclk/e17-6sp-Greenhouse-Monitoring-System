@@ -10,7 +10,7 @@ var router = express.Router();
 router.use(bodyParser.json());
 
 /* GET users listing. */
-router.get('/', function(req, res, next) {
+router.get('/', authenticate.verifyUser, function(req, res, next) {
   res.send('respond with a resource');
 });
 
@@ -57,19 +57,40 @@ router.get('/logout', (req, res) => {
 });
 
 //user profile details route "/getinfo"
-// add midlewares to check authentication
 router.get('/getinfo', authenticate.verifyUser, (req, res) =>{
-  res.statusCode = 200;
-  res.setHeader('Content-Type', 'application/json');
-  res.json({success: true, status: 'user details /getinfo'});
+  //get user details
+  User.findById(req.user._id, (err, user) => {
+    if(err) {
+      res.statusCode = 500;
+      res.setHeader('Content-Type', 'application/json');
+      res.json({err: err});
+    }
+    else {
+      res.statusCode = 200;
+      res.setHeader('Content-Type', 'application/json');
+      res.json({success: true,  user: user});
+    }
+});
 });
 
 //update user info route "/updateinfo"
-// add midlewares to check authentication
+
 router.put('/updateinfo', authenticate.verifyUser, (req, res) =>{
-  res.statusCode = 200;
-  res.setHeader('Content-Type', 'application/json');
-  res.json({success: true, status: 'user details updated'});
+  //update user details
+  User.findByIdAndUpdate(req.user._id, {$set: req.body}, {new: true}, (err, user) => {
+    if(err) {
+      res.statusCode = 500;
+      res.setHeader('Content-Type', 'application/json');
+      res.json({err: err});
+    }
+    else {
+      res.statusCode = 200;
+      res.setHeader('Content-Type', 'application/json');
+      res.json({success: true,
+                status: 'Updated Successfully',
+                user: user});
+    }
+});
 });
 
 module.exports = router;
