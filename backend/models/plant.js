@@ -9,7 +9,13 @@ var Plant = new Schema({
     },
     diseases: [{
         type: String
-    }]
+    }],
+    totalYield: {
+        type: Number
+    },
+    yieldToBeHarvested: {
+        type: Number
+    }
 });
 
 Plant.plugin(passportLocalMongoose);
