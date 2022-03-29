@@ -43,7 +43,7 @@
 <td valign="top">GET</td>
 <td valign="top">/getinfo</td>
 <td valign="top">Body:accessToken</td>
-<td valign="top"><span style="color:green">Success:</span><br>StatusCode: 200<br>Message : <br>Body:<br>
+<td valign="top"><span style="color:green">Success:</span><br>StatusCode: 200<br>Message : <br>Body:User<br>
 <br><span style="color:red">Failure:</span><br>Status Code: 403</td>
 </tr>
 
@@ -52,7 +52,7 @@
 <td valign="top">PUT</td>
 <td valign="top">/updateinfo</td>
 <td valign="top">Body:accessToken</td>
-<td valign="top"><span style="color:green">Success:</span><br>StatusCode: 200<br>Message : Updated Successfully<br>Body:<br>
+<td valign="top"><span style="color:green">Success:</span><br>StatusCode: 200<br>Message : Updated Successfully<br>Body:User<br>
 <br><span style="color:red">Failure:</span><br>Status Code: 403</td>
 </tr>
 
