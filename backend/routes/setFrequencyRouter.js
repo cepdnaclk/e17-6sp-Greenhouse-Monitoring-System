@@ -8,11 +8,29 @@ var router = express.Router();
 
 router.use(bodyParser.json());
 
-//set frequency
-router.put('/', authenticate.verifyUser, (req, res) =>{
-    res.statusCode = 200;
-    res.setHeader('Content-Type', 'application/json');
-    res.json({success: true, status: 'frequency updated: '+req.body.frequency });
-});
+
+//get current frequency
+router.get('/', authenticate.verifyUser, (req, res, next) => {
+    Frequency.find({})
+        .then((frequency) => {
+            res.statusCode = 200;
+            res.setHeader('Content-Type', 'application/json');
+            res.json(frequency);
+        }, (err) => next(err))
+        .catch((err) => next(err));
+})
+
+//update frequency value
+router.put('/', authenticate.verifyUser, (req, res, next) => {
+    Frequency.updateOne({}, { $set: { time: req.body.frequency } })
+        .then((frequency) => {
+            console.log(req.body.frequency);
+            res.statusCode = 200;
+            res.setHeader('Content-Type', 'application/json');
+            res.json(frequency);
+        }, (err) => next(err))
+        .catch((err) => next(err));
+})
+
 
 module.exports = router;
