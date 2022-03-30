@@ -51,21 +51,16 @@ router.get('/get-yield/:plantID', authenticate.verifyUser, (req, res) =>{
 // Leaf diseases details route ./get-disease
 // get all diseases of all plants
 router.get('/get-disease', authenticate.verifyUser, (req, res) =>{
-  var plantId;
-  var plantDiseases = [];
 
   Plant.find({})
   .then(plants => {
     plants.map(plant=>{
-      plantId = plant.plantID;
-    });
-    plants.map(plant=>{
-      plantDiseases = plant.diseases;
+      plants.plantID = plant.plantID;
     });
 
     res.statusCode = 200;
     res.setHeader('Content-Type', 'application/json');
-    res.json(plantId,plantDiseases);
+    res.json(plants.plantID,plants.diseases);
 
   });
 
