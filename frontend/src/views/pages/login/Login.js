@@ -37,7 +37,7 @@ const Login = () => {
     .then((res)=> {
       console.log(res.data);
       if (res.data.success) {
-        window.location = '/dashboard'
+        window.location = '/_dashboard'
       }
     })
   }
