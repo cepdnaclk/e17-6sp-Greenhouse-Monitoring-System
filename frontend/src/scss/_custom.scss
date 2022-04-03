@@ -34,3 +34,16 @@
     fill: currentColor;
     transition: inherit;
 }
+
+.bg-light {
+    --cui-bg-opacity: 1;
+    background-color: #51BD85 !important;
+    background-image: url('background.jpg');
+    background-size: cover;
+}
+.card-back {
+    --cui-bg-opacity: 100;
+    background-color: rgba(var(--cui-light-rgb), var(--cui-bg-opacity)) !important;
+    border-radius: 10px;
+    backdrop-filter: blur(14px);
+}

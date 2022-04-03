@@ -1,8 +1,6 @@
 import React, { useState, Suspense } from 'react'
 import { Link, Navigate } from 'react-router-dom'
-
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
-
 import {
   CButton,
   CCard,
@@ -21,7 +19,6 @@ import { cilLockLocked, cilUser } from '@coreui/icons'
 
 import axios from 'axios';
 import DefaultLayout from 'src/layout/DefaultLayout'
-
 
 const Login = () => {
   const [username, setUsername] = useState('');
@@ -47,7 +44,7 @@ const Login = () => {
       <CContainer>
         <CRow className="justify-content-center">
           <CCol md={8}>
-            <CCardGroup>
+            <CCardGroup className="card-back">
               <CCard className="p-4">
                 <CCardBody>
                   <CForm>
@@ -85,26 +82,10 @@ const Login = () => {
                   </CForm>
                 </CCardBody>
               </CCard>
-              {/* <CCard className="text-white bg-primary py-5" style={{ width: '44%' }}>
-                <CCardBody className="text-center">
-                  <div>
-                    <h2>Sign up</h2>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                      tempor incididunt ut labore et dolore magna aliqua.
-                    </p>
-                    <Link to="/register">
-                      <CButton color="primary" className="mt-3" active tabIndex={-1}>
-                        Register Now!
-                      </CButton>
-                    </Link>
-                  </div>
-                </CCardBody>
-              </CCard> */}
             </CCardGroup>
           </CCol>
         </CRow>
-      </CContainer>
+        </CContainer>     
     </div>
   )
 }
