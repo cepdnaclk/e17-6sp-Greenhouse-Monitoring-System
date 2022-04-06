@@ -113,7 +113,7 @@ The Camera System should be triggered for a defined frequency. The frequency mea
 <td valign="top">GET</td>
 <td valign="top">/get-yield/:plantID</td>
 <td valign="top">Body:accessToken </td>
-<td valign="top"><span style="color:green">Success:</span><br>StatusCode: 200 <br>Body:crop_yield_stage<br>
+<td valign="top"><span style="color:green">Success:</span><br>StatusCode: 200 <br>Body:yield<br>
 <br><span style="color:red">Failure:</span><br>Status Code: 403</td>
 </tr>
   
