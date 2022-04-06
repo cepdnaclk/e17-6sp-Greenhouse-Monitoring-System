@@ -52,15 +52,16 @@ router.get('/get-yield/:plantID', authenticate.verifyUser, (req, res) =>{
 // get all diseases of all plants
 router.get('/get-disease', authenticate.verifyUser, (req, res) =>{
 
+  var diseaseArray = [];
   Plant.find({})
   .then(plants => {
     plants.map(plant=>{
-      plants.plantID = plant.plantID;
+      diseaseArray.push([plant.plantID, plant.diseases]);
     });
 
     res.statusCode = 200;
     res.setHeader('Content-Type', 'application/json');
-    res.json(plants.plantID,plants.diseases);
+    res.json(diseaseArray);
 
   });
 
