@@ -35,7 +35,7 @@
     transition: inherit;
 }
 
-.bg-light {
+.bg-home {
     --cui-bg-opacity: 1;
     background-color: #51BD85 !important;
     background-image: url('background.jpg');
@@ -43,7 +43,9 @@
 }
 .card-back {
     --cui-bg-opacity: 100;
-    background-color: rgba(var(--cui-light-rgb), var(--cui-bg-opacity)) !important;
+    background-color: #c4c5c4 !important;
     border-radius: 10px;
-    backdrop-filter: blur(14px);
+    backdrop-filter: blur(100px);
+    padding: 1.5rem !important;
+    opacity: 0.9;
 }

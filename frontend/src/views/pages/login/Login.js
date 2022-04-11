@@ -40,12 +40,12 @@ const Login = () => {
   }
 
   return (
-    <div className="bg-light min-vh-100 d-flex flex-row align-items-center">
+    <div className="bg-home min-vh-100 d-flex flex-row align-items-center">
       <CContainer>
         <CRow className="justify-content-center">
           <CCol md={8}>
-            <CCardGroup className="card-back">
-              <CCard className="p-4">
+            <CCardGroup>
+              <CCard className="card-back">
                 <CCardBody>
                   <CForm>
                     <h1>Login</h1>
@@ -69,7 +69,7 @@ const Login = () => {
                     </CInputGroup>
                     <CRow>
                       <CCol xs={6}>
-                        <CButton onClick={authenticateUser} color="primary" className="px-4">
+                        <CButton onClick={authenticateUser} color="success" className="px-4">
                           Login
                         </CButton>
                       </CCol>
@@ -85,7 +85,7 @@ const Login = () => {
             </CCardGroup>
           </CCol>
         </CRow>
-        </CContainer>     
+        </CContainer>    
     </div>
   )
 }
