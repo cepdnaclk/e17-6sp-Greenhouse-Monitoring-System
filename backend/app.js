@@ -13,9 +13,12 @@ var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var featuresRouter = require('./routes/featuresRouter');
 var setFreqRouter = require('./routes/setFrequencyRouter');
+var imageUpload = require('./routes/plants');
 
 const mongoose = require('mongoose');
 mongoose.Promise = Promise;
+
+const cors = require("cors");
 
 //mongodb URL
 const url = config.mongoUrl;
@@ -70,9 +73,12 @@ app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/features', featuresRouter);
 app.use('/frequency', setFreqRouter);
+app.use('/imageUpload', imageUpload);
 
 //auth middleware
 app.use(auth);
+
+app.use(cors());
 
 app.use(express.static(path.join(__dirname, 'public')));
 
