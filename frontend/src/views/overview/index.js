@@ -108,6 +108,258 @@ const index = () => {
           </CCard>
         </CCol>
       </CRow>
+      <br></br>
+      <br></br>
+      <CRow xs={{ cols: 1 }} md={{ cols: 4 }} >
+        <CCol>
+          <CCard style={{ height: '18rem', width: '18rem' }}>
+            <CCardImage orientation="top" src={A0} style={{ height: '15rem', width: '18rem' }}/>
+              <CCardBody>
+                <CButton href="#">C0</CButton>
+              </CCardBody>
+          </CCard>
+        </CCol>
+        <CCol>
+          <CCard style={{ height: '18rem', width: '18rem' }}>
+            <CCardImage orientation="top" src={A1} style={{ height: '15rem', width: '18rem' }}/>
+              <CCardBody>
+                <CButton href="#">C1</CButton>
+              </CCardBody>
+          </CCard>
+        </CCol>
+        <CCol>
+          <CCard style={{ height: '18rem', width: '18rem' }}>
+            <CCardImage orientation="top" src={A2} style={{ height: '15rem', width: '18rem' }}/>
+              <CCardBody>
+                <CButton href="#">C2</CButton>
+              </CCardBody>
+          </CCard>
+        </CCol>
+        <CCol>
+          <CCard style={{ height: '18rem', width: '18rem' }}>
+            <CCardImage orientation="top" src={A3} style={{ height: '15rem', width: '18rem' }}/>
+              <CCardBody>
+                <CButton href="#">C3</CButton>
+              </CCardBody>
+          </CCard>
+        </CCol>
+      </CRow>
+      <br></br>
+      <br></br>
+      <CRow xs={{ cols: 1 }} md={{ cols: 4 }} >
+        <CCol>
+          <CCard style={{ height: '18rem', width: '18rem' }}>
+            <CCardImage orientation="top" src={B0} style={{ height: '15rem', width: '18rem' }}/>
+              <CCardBody>
+                <CButton href="#">D0</CButton>
+              </CCardBody>
+          </CCard>
+        </CCol>
+        <CCol>
+          <CCard style={{ height: '18rem', width: '18rem' }}>
+            <CCardImage orientation="top" src={B1} style={{ height: '15rem', width: '18rem' }}/>
+              <CCardBody>
+                <CButton href="#">D1</CButton>
+              </CCardBody>
+          </CCard>
+        </CCol>
+        <CCol>
+          <CCard style={{ height: '18rem', width: '18rem' }}>
+            <CCardImage orientation="top" src={B2} style={{ height: '15rem', width: '18rem' }}/>
+              <CCardBody>
+                <CButton href="#">D2</CButton>
+              </CCardBody>
+          </CCard>
+        </CCol>
+        <CCol>
+          <CCard style={{ height: '18rem', width: '18rem' }}>
+            <CCardImage orientation="top" src={B3} style={{ height: '15rem', width: '18rem' }}/>
+              <CCardBody>
+                <CButton href="#">D3</CButton>
+              </CCardBody>
+          </CCard>
+        </CCol>
+      </CRow>
+      <br></br>
+      <br></br>
+      <CRow xs={{ cols: 1 }} md={{ cols: 4 }} >
+        <CCol>
+          <CCard style={{ height: '18rem', width: '18rem' }}>
+            <CCardImage orientation="top" src={A0} style={{ height: '15rem', width: '18rem' }}/>
+              <CCardBody>
+                <CButton href="#">E0</CButton>
+              </CCardBody>
+          </CCard>
+        </CCol>
+        <CCol>
+          <CCard style={{ height: '18rem', width: '18rem' }}>
+            <CCardImage orientation="top" src={A1} style={{ height: '15rem', width: '18rem' }}/>
+              <CCardBody>
+                <CButton href="#">E1</CButton>
+              </CCardBody>
+          </CCard>
+        </CCol>
+        <CCol>
+          <CCard style={{ height: '18rem', width: '18rem' }}>
+            <CCardImage orientation="top" src={A2} style={{ height: '15rem', width: '18rem' }}/>
+              <CCardBody>
+                <CButton href="#">E2</CButton>
+              </CCardBody>
+          </CCard>
+        </CCol>
+        <CCol>
+          <CCard style={{ height: '18rem', width: '18rem' }}>
+            <CCardImage orientation="top" src={A3} style={{ height: '15rem', width: '18rem' }}/>
+              <CCardBody>
+                <CButton href="#">E3</CButton>
+              </CCardBody>
+          </CCard>
+        </CCol>
+      </CRow>
+      <br></br>
+      <br></br>
+      <CRow xs={{ cols: 1 }} md={{ cols: 4 }} >
+        <CCol>
+          <CCard style={{ height: '18rem', width: '18rem' }}>
+            <CCardImage orientation="top" src={B0} style={{ height: '15rem', width: '18rem' }}/>
+              <CCardBody>
+                <CButton href="#">F0</CButton>
+              </CCardBody>
+          </CCard>
+        </CCol>
+        <CCol>
+          <CCard style={{ height: '18rem', width: '18rem' }}>
+            <CCardImage orientation="top" src={B1} style={{ height: '15rem', width: '18rem' }}/>
+              <CCardBody>
+                <CButton href="#">F1</CButton>
+              </CCardBody>
+          </CCard>
+        </CCol>
+        <CCol>
+          <CCard style={{ height: '18rem', width: '18rem' }}>
+            <CCardImage orientation="top" src={B2} style={{ height: '15rem', width: '18rem' }}/>
+              <CCardBody>
+                <CButton href="#">F2</CButton>
+              </CCardBody>
+          </CCard>
+        </CCol>
+        <CCol>
+          <CCard style={{ height: '18rem', width: '18rem' }}>
+            <CCardImage orientation="top" src={B3} style={{ height: '15rem', width: '18rem' }}/>
+              <CCardBody>
+                <CButton href="#">F3</CButton>
+              </CCardBody>
+          </CCard>
+        </CCol>
+      </CRow>
+      <br></br>
+      <br></br>
+      <CRow xs={{ cols: 1 }} md={{ cols: 4 }} >
+        <CCol>
+          <CCard style={{ height: '18rem', width: '18rem' }}>
+            <CCardImage orientation="top" src={A0} style={{ height: '15rem', width: '18rem' }}/>
+              <CCardBody>
+                <CButton href="#">G0</CButton>
+              </CCardBody>
+          </CCard>
+        </CCol>
+        <CCol>
+          <CCard style={{ height: '18rem', width: '18rem' }}>
+            <CCardImage orientation="top" src={A1} style={{ height: '15rem', width: '18rem' }}/>
+              <CCardBody>
+                <CButton href="#">G1</CButton>
+              </CCardBody>
+          </CCard>
+        </CCol>
+        <CCol>
+          <CCard style={{ height: '18rem', width: '18rem' }}>
+            <CCardImage orientation="top" src={A2} style={{ height: '15rem', width: '18rem' }}/>
+              <CCardBody>
+                <CButton href="#">G2</CButton>
+              </CCardBody>
+          </CCard>
+        </CCol>
+        <CCol>
+          <CCard style={{ height: '18rem', width: '18rem' }}>
+            <CCardImage orientation="top" src={A3} style={{ height: '15rem', width: '18rem' }}/>
+              <CCardBody>
+                <CButton href="#">G3</CButton>
+              </CCardBody>
+          </CCard>
+        </CCol>
+      </CRow>
+      <br></br>
+      <br></br>
+      <CRow xs={{ cols: 1 }} md={{ cols: 4 }} >
+        <CCol>
+          <CCard style={{ height: '18rem', width: '18rem' }}>
+            <CCardImage orientation="top" src={B0} style={{ height: '15rem', width: '18rem' }}/>
+              <CCardBody>
+                <CButton href="#">H0</CButton>
+              </CCardBody>
+          </CCard>
+        </CCol>
+        <CCol>
+          <CCard style={{ height: '18rem', width: '18rem' }}>
+            <CCardImage orientation="top" src={B1} style={{ height: '15rem', width: '18rem' }}/>
+              <CCardBody>
+                <CButton href="#">H1</CButton>
+              </CCardBody>
+          </CCard>
+        </CCol>
+        <CCol>
+          <CCard style={{ height: '18rem', width: '18rem' }}>
+            <CCardImage orientation="top" src={B2} style={{ height: '15rem', width: '18rem' }}/>
+              <CCardBody>
+                <CButton href="#">H2</CButton>
+              </CCardBody>
+          </CCard>
+        </CCol>
+        <CCol>
+          <CCard style={{ height: '18rem', width: '18rem' }}>
+            <CCardImage orientation="top" src={B3} style={{ height: '15rem', width: '18rem' }}/>
+              <CCardBody>
+                <CButton href="#">H3</CButton>
+              </CCardBody>
+          </CCard>
+        </CCol>
+      </CRow>
+      <br></br>
+      <br></br>
+      <CRow xs={{ cols: 1 }} md={{ cols: 4 }} >
+        <CCol>
+          <CCard style={{ height: '18rem', width: '18rem' }}>
+            <CCardImage orientation="top" src={A0} style={{ height: '15rem', width: '18rem' }}/>
+              <CCardBody>
+                <CButton href="#">I0</CButton>
+              </CCardBody>
+          </CCard>
+        </CCol>
+        <CCol>
+          <CCard style={{ height: '18rem', width: '18rem' }}>
+            <CCardImage orientation="top" src={A1} style={{ height: '15rem', width: '18rem' }}/>
+              <CCardBody>
+                <CButton href="#">I1</CButton>
+              </CCardBody>
+          </CCard>
+        </CCol>
+        <CCol>
+          <CCard style={{ height: '18rem', width: '18rem' }}>
+            <CCardImage orientation="top" src={A2} style={{ height: '15rem', width: '18rem' }}/>
+              <CCardBody>
+                <CButton href="#">I2</CButton>
+              </CCardBody>
+          </CCard>
+        </CCol>
+        <CCol>
+          <CCard style={{ height: '18rem', width: '18rem' }}>
+            <CCardImage orientation="top" src={A3} style={{ height: '15rem', width: '18rem' }}/>
+              <CCardBody>
+                <CButton href="#">I3</CButton>
+              </CCardBody>
+          </CCard>
+        </CCol>
+      </CRow>
     </>
   )
 }
