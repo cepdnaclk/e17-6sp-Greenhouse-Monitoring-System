@@ -12,7 +12,7 @@ var router = express.Router();
 router.use(bodyParser.json());
 
 
-router.post("/:id",authenticate.verifyUser, function (req, res) {
+router.post("/:plantID",authenticate.verifyUser, function (req, res, next) {
     const uid = req.params.id;
 
     singleUpload(req, res, function (err) {
@@ -27,14 +27,26 @@ router.post("/:id",authenticate.verifyUser, function (req, res) {
         });
       }
   
-      let update = { plantPicture: req.file.location };
+      var update = { plantPicture: req.file.location };
 
-      console.log(update);
-  
-      Plant.findByIdAndUpdate(uid, update, { new: true })
-        .then((plant) => res.status(200).json({ success: true, plant: plant }))
-        .catch((err) => res.status(400).json({ success: false, error: err }));
-    });
+      // console.log(update);
+      
+      Plant.updateOne({ plantID: req.params.plantID }, {
+        $set: {
+          imageUrl: update.plantPicture
+        }
+      }).then((plant)=> {
+        // console.log("updated plant - ");
+        // console.log(plant);
+        res.statusCode = 200;
+            res.setHeader('Content-Type', 'application/json');
+            res.json({success: true,
+                status: 'image updated!',
+                imageUrl: update.plantPicture});
+        }, (err) => next(err))
+        .catch((err)=> next(err));
+      })
+
   });
 
 
