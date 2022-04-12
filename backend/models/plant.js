@@ -7,6 +7,9 @@ var Plant = new Schema({
         type: String,
         required: true
     },
+    imageUrl: {
+        type: String
+    },
     diseases: [{
         type: String
     }],
