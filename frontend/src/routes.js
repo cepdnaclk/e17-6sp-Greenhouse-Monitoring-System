@@ -59,6 +59,7 @@ const growth = React.lazy(() => import('./views/growth'))
 const harvest = React.lazy(() => import('./views/harvest'))
 const predictions = React.lazy(() => import('./views/predictions'))
 const reports = React.lazy(() => import('./views/reports'))
+const profile = React.lazy(() => import('./views/profile'))
 
 const routes = [
   { path: '/', exact: true, name: 'Home' },
@@ -113,6 +114,7 @@ const routes = [
   { path: '/harvest', name: 'Crop Harvest', element: harvest },
   { path: '/predictions', name: 'Predictions', element: predictions },
   { path: '/reports', name: 'Reports', element: reports },
+  { path: '/profile', name: 'User Profile', element: profile },
 ]
 
 export default routes
