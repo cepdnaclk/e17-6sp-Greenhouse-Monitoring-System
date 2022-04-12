@@ -15,9 +15,6 @@ router.use(bodyParser.json());
 router.post("/:id",authenticate.verifyUser, function (req, res) {
     const uid = req.params.id;
 
-    console.log(process.env.AWS_ACCESS_KEY);
-    console.log(process.env.AWS_ACCESS_SECRET);
-  
     singleUpload(req, res, function (err) {
       if (err) {
         return res.json({

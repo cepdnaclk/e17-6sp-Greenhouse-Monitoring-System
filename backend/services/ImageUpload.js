@@ -11,8 +11,8 @@ aws.config.update({
     apiVersion: 'latest',
     region: "ap-southeast-1",
     credentials: {
-        accessKeyId: 'AKIAUYF2BB5DLT2RJALU',
-        secretAccessKey: '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'
+        accessKeyId: 'Accesse Key',
+        secretAccessKey: 'Secrect Key'
       }
   });
 
