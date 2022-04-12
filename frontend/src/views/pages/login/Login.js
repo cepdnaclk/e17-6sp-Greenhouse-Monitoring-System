@@ -45,7 +45,9 @@ const Login = () => {
         <CRow className="justify-content-center">
           <CCol md={8}>
             <CCardGroup>
-              <CCard className="card-back">
+            <CCard className="card-back">
+              <CCardBody>
+              <CCard className="p-4">
                 <CCardBody>
                   <CForm>
                     <h1>Login</h1>
@@ -69,7 +71,7 @@ const Login = () => {
                     </CInputGroup>
                     <CRow>
                       <CCol xs={6}>
-                        <CButton onClick={authenticateUser} color="success" className="px-4">
+                        <CButton onClick={authenticateUser} color="primary" className="px-4">
                           Login
                         </CButton>
                       </CCol>
@@ -81,6 +83,8 @@ const Login = () => {
                     </CRow>
                   </CForm>
                 </CCardBody>
+              </CCard>
+              </CCardBody>
               </CCard>
             </CCardGroup>
           </CCol>
