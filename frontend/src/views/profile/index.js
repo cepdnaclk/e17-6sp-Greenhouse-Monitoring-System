@@ -1,4 +1,4 @@
-import React, {  useState } from 'react'
+import React, {  useEffect, useState } from 'react'
 
 import {
     CButton,
@@ -14,11 +14,9 @@ import {
     CRow,
     CFormLabel,
   } from '@coreui/react'
-  import CIcon from '@coreui/icons-react'
-  import { cilLockLocked, cilUser } from '@coreui/icons'
   
-  import axios from 'axios';
-
+import axios from 'axios';
+import { getState } from 'core-js/modules/web.url-search-params';
 
 const index = () => {
   const random = (min, max) => {
@@ -29,6 +27,44 @@ const index = () => {
   const [lastname, setLastname] = useState('');
   const [email, setEmail] = useState('');
   const [contactNumber, setContactNumber] = useState('');
+
+  
+  var credentials = {
+    firstname: firstname,
+    lastname: lastname,
+    email: email,
+    contactNumber: contactNumber
+  };
+
+  const {
+    userLogin: { userInfo },
+  } = getState();
+
+  const config = {
+    headers: {
+      "Content-Type": "application/json",
+      Authorization: `Bearer ${userInfo.token}`,
+    }
+  }
+
+  const updateUser = ()=> {
+    axios.put('http://localhost:3000/users/updateinfo', credentials)
+    .then((res)=> {
+      console.log(res.data);
+      if (res.data.success) {
+        window.location = '/_dashboard'
+      }
+    })
+  }
+
+  useEffect(() => {
+      setFirstname(userInfo.firstname)
+      setLastname(userInfo.lastname)
+      setEmail(userInfo.email)
+      setContactNumber(userInfo.contactNumber)
+  }, [userInfo]
+  );
+  
 
   return (
     <>
