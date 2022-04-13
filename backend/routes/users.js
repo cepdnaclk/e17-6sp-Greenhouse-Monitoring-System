@@ -74,9 +74,8 @@ router.get('/getinfo', authenticate.verifyUser, (req, res) =>{
 });
 
 //update user info route "/updateinfo"
-
 router.put('/updateinfo', authenticate.verifyUser, (req, res) =>{
-  //update user details
+  //find user details using user id
   User.findByIdAndUpdate(req.user._id, {$set: req.body}, {new: true}, (err, user) => {
     if(err) {
       res.statusCode = 500;
