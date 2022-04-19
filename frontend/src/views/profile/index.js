@@ -23,22 +23,21 @@ const index = () => {
     return Math.floor(Math.random() * (max - min + 1) + min)
   }
 
+  // Set useState(variable, function)
+  // Ex variable =firstname, function= setFirstname
+  // Destructured array
   const [firstname, setFirstname] = useState('');
   const [lastname, setLastname] = useState('');
   const [email, setEmail] = useState('');
   const [contactNumber, setContactNumber] = useState('');
 
-  
-  var credentials = {
+/*  
+  var user = {
     firstname: firstname,
     lastname: lastname,
     email: email,
     contactNumber: contactNumber
   };
-
-  const {
-    userLogin: { userInfo },
-  } = getState();
 
   const config = {
     headers: {
@@ -48,23 +47,30 @@ const index = () => {
   }
 
   const updateUser = ()=> {
-    axios.put('http://localhost:3000/users/updateinfo', credentials)
+    axios.put('http://localhost:3000/users/updateinfo', user)
     .then((res)=> {
       console.log(res.data);
       if (res.data.success) {
-        window.location = '/_dashboard'
+        window.location = '/profile'
       }
     })
   }
 
   useEffect(() => {
-      setFirstname(userInfo.firstname)
-      setLastname(userInfo.lastname)
-      setEmail(userInfo.email)
-      setContactNumber(userInfo.contactNumber)
-  }, [userInfo]
+    axios.get("localhost:3000/users/getinfo")
+      .then(res => {
+        console.log(res);
+        setFirstname(res.data[0])
+        setLastname(res.data[1])
+        setEmail(res.data[2])
+        setContactNumber(res.data[3])
+      })
+      .catch(err => {
+        console.log(err)
+      })
+  }, []
   );
-  
+*/  
 
   return (
     <>
