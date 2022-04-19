@@ -88,7 +88,7 @@ const index = () => {
         </CCol>
         <CCol>
           <CCard style={{ height: '18rem', width: '18rem' }}>
-            <CCardImage orientation="top" src={A2} style={{ height: '15rem', width: '18rem' }}/>
+            <CCardImage orientation="top" src={imgUrls[2]} style={{ height: '15rem', width: '18rem' }}/>
               <CCardBody>
                 <CButton href="#">A2</CButton>
               </CCardBody>
@@ -96,7 +96,7 @@ const index = () => {
         </CCol>
         <CCol>
           <CCard style={{ height: '18rem', width: '18rem' }}>
-            <CCardImage orientation="top" src={A3} style={{ height: '15rem', width: '18rem' }}/>
+            <CCardImage orientation="top" src={imgUrls[3]} style={{ height: '15rem', width: '18rem' }}/>
               <CCardBody>
                 <CButton href="#">A3</CButton>
               </CCardBody>
@@ -108,7 +108,7 @@ const index = () => {
       <CRow xs={{ cols: 1 }} md={{ cols: 4 }} >
         <CCol>
           <CCard style={{ height: '18rem', width: '18rem' }}>
-            <CCardImage orientation="top" src={B0} style={{ height: '15rem', width: '18rem' }}/>
+            <CCardImage orientation="top" src={imgUrls[4]} style={{ height: '15rem', width: '18rem' }}/>
               <CCardBody>
                 <CButton href="#">B0</CButton>
               </CCardBody>
@@ -116,7 +116,7 @@ const index = () => {
         </CCol>
         <CCol>
           <CCard style={{ height: '18rem', width: '18rem' }}>
-            <CCardImage orientation="top" src={B1} style={{ height: '15rem', width: '18rem' }}/>
+            <CCardImage orientation="top" src={imgUrls[5]} style={{ height: '15rem', width: '18rem' }}/>
               <CCardBody>
                 <CButton href="#">B1</CButton>
               </CCardBody>
@@ -124,7 +124,7 @@ const index = () => {
         </CCol>
         <CCol>
           <CCard style={{ height: '18rem', width: '18rem' }}>
-            <CCardImage orientation="top" src={B2} style={{ height: '15rem', width: '18rem' }}/>
+            <CCardImage orientation="top" src={imgUrls[6]} style={{ height: '15rem', width: '18rem' }}/>
               <CCardBody>
                 <CButton href="#">B2</CButton>
               </CCardBody>
@@ -132,7 +132,7 @@ const index = () => {
         </CCol>
         <CCol>
           <CCard style={{ height: '18rem', width: '18rem' }}>
-            <CCardImage orientation="top" src={B3} style={{ height: '15rem', width: '18rem' }}/>
+            <CCardImage orientation="top" src={imgUrls[7]} style={{ height: '15rem', width: '18rem' }}/>
               <CCardBody>
                 <CButton href="#">B3</CButton>
               </CCardBody>
