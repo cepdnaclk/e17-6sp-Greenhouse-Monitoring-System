@@ -1,4 +1,5 @@
-import React, { lazy } from 'react'
+import React, { lazy, useState, useEffect } from 'react'
+import axios from 'axios';
 
 import {
   CAvatar,
@@ -36,12 +37,37 @@ const index = () => {
   const random = (min, max) => {
     return Math.floor(Math.random() * (max - min + 1) + min)
   }
+
+  const [plantDetails, setPlantDetails] = useState('');
+
+// obtaining an image
+const obtainImage = ()=> {
+  // axios.get(`http://localhost:3000/features/get-plant/${plantID}`)
+  console.log('hello u');
+  axios.get(`http://localhost:3000/features/get-plant/A01`)
+  .then((res)=> {
+    // console.log(res.data);
+    // console.log(res.data.imageUrl);
+    // if (res.data.success) {
+    //   // console.log(res);
+    //   setPlantDetails(res.data);
+    //   console.log(plantDetails);
+    // }
+
+    setPlantDetails(res.data.imageUrl)
+  })
+}
+
+
+
+
   return (
     <>
+    <button onClick={obtainImage}>Test</button>
       <CRow xs={{ cols: 1 }} md={{ cols: 4 }} >
         <CCol>
           <CCard style={{ height: '18rem', width: '18rem' }}>
-            <CCardImage orientation="top" src={A0} style={{ height: '15rem', width: '18rem' }}/>
+            <CCardImage orientation="top" src={plantDetails} style={{ height: '15rem', width: '18rem' }}/>
               <CCardBody>
                 <CButton href="./one_plant_overview">A0</CButton>
               </CCardBody>
