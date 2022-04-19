@@ -40,21 +40,31 @@ const index = () => {
 
   const [plantDetails, setPlantDetails] = useState('');
 
+  const [imgUrls, setImgUrls] = useState([]);
 
   useEffect(()=>{
     // obtaining an image
     // const obtainImage = ()=> {
       // axios.get(`http://localhost:3000/features/get-plant/${plantID}`)
       console.log('hello u');
-      axios.get(`http://localhost:3000/features/get-plant/A01`)
+      axios.get(`http://localhost:3000/features/get-plants`)
       .then((res)=> {
-        setPlantDetails(res.data.imageUrl)
+        // setPlantDetails(res.data)
+
+        var urlsList = []
+        res.data.map((plant)=>{
+          urlsList.push(plant.imageUrl);
+        });
+
+        console.log(urlsList);
+        setImgUrls(urlsList);
+
       })
     // }
-  });
+  }, []);
 
 
-  console.log(plantDetails);
+  // console.log(plantDetails);
 
   return (
     <>
@@ -62,7 +72,7 @@ const index = () => {
       <CRow xs={{ cols: 1 }} md={{ cols: 4 }} >
         <CCol>
           <CCard style={{ height: '18rem', width: '18rem' }}>
-            <CCardImage orientation="top" src={plantDetails} style={{ height: '15rem', width: '18rem' }}/>
+            <CCardImage orientation="top" src={imgUrls[0]} style={{ height: '15rem', width: '18rem' }}/>
               <CCardBody>
                 <CButton href="./one_plant_overview">A0</CButton>
               </CCardBody>
@@ -70,7 +80,7 @@ const index = () => {
         </CCol>
         <CCol>
           <CCard style={{ height: '18rem', width: '18rem' }}>
-            <CCardImage orientation="top" src={A1} style={{ height: '15rem', width: '18rem' }}/>
+            <CCardImage orientation="top" src={imgUrls[1]} style={{ height: '15rem', width: '18rem' }}/>
               <CCardBody>
                 <CButton href="#">A1</CButton>
               </CCardBody>
