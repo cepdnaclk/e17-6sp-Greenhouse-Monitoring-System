@@ -79,4 +79,31 @@ router.get('/get-disease/:plantID', authenticate.verifyUser, (req, res) =>{
 
 });
 
+
+
+// get the whole plant
+router.get('/get-plant/:plantID', (req, res) =>{
+  Plant.find({plantID: req.params.plantID})
+  .then(plant => {
+    res.statusCode = 200;
+    res.setHeader('Content-Type', 'application/json');
+    res.json(plant[0]);
+
+  });
+
+});
+
+
+// get whole plants
+router.get('/get-plants', (req, res) =>{
+  Plant.find()
+  .then(plants => {
+    res.statusCode = 200;
+    res.setHeader('Content-Type', 'application/json');
+    res.json(plants);
+
+  });
+
+});
+
 module.exports = router;
