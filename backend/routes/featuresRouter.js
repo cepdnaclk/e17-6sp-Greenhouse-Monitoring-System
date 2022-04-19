@@ -79,4 +79,18 @@ router.get('/get-disease/:plantID', authenticate.verifyUser, (req, res) =>{
 
 });
 
+
+
+// get the whole plant
+router.get('/get-plant/:plantID', authenticate.verifyUser, (req, res) =>{
+  Plant.find({plantID: req.params.plantID})
+  .then(plant => {
+    res.statusCode = 200;
+    res.setHeader('Content-Type', 'application/json');
+    res.json(plant[0]);
+
+  });
+
+});
+
 module.exports = router;
