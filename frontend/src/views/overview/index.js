@@ -40,30 +40,25 @@ const index = () => {
 
   const [plantDetails, setPlantDetails] = useState('');
 
-// obtaining an image
-const obtainImage = ()=> {
-  // axios.get(`http://localhost:3000/features/get-plant/${plantID}`)
-  console.log('hello u');
-  axios.get(`http://localhost:3000/features/get-plant/A01`)
-  .then((res)=> {
-    // console.log(res.data);
-    // console.log(res.data.imageUrl);
-    // if (res.data.success) {
-    //   // console.log(res);
-    //   setPlantDetails(res.data);
-    //   console.log(plantDetails);
+
+  useEffect(()=>{
+    // obtaining an image
+    // const obtainImage = ()=> {
+      // axios.get(`http://localhost:3000/features/get-plant/${plantID}`)
+      console.log('hello u');
+      axios.get(`http://localhost:3000/features/get-plant/A01`)
+      .then((res)=> {
+        setPlantDetails(res.data.imageUrl)
+      })
     // }
-
-    setPlantDetails(res.data.imageUrl)
-  })
-}
+  });
 
 
-
+  console.log(plantDetails);
 
   return (
     <>
-    <button onClick={obtainImage}>Test</button>
+    {/* <button onClick={obtainImage}>Test</button> */}
       <CRow xs={{ cols: 1 }} md={{ cols: 4 }} >
         <CCol>
           <CCard style={{ height: '18rem', width: '18rem' }}>
