@@ -31,7 +31,7 @@ const index = () => {
   const [email, setEmail] = useState('');
   const [contactNumber, setContactNumber] = useState('');
 
-/*  
+  
   var user = {
     firstname: firstname,
     lastname: lastname,
@@ -39,12 +39,14 @@ const index = () => {
     contactNumber: contactNumber
   };
 
+  /*
   const config = {
     headers: {
       "Content-Type": "application/json",
       Authorization: `Bearer ${userInfo.token}`,
     }
   }
+*/
 
   const updateUser = ()=> {
     axios.put('http://localhost:3000/users/updateinfo', user)
@@ -60,17 +62,16 @@ const index = () => {
     axios.get("localhost:3000/users/getinfo")
       .then(res => {
         console.log(res);
-        setFirstname(res.data[0])
-        setLastname(res.data[1])
-        setEmail(res.data[2])
-        setContactNumber(res.data[3])
+        setFirstname(res.data[1].firstname)
+        setLastname(res.data[1].lastname)
+        setEmail(res.data[1].email)
+        setContactNumber(res.data[1].contactNumber)
       })
       .catch(err => {
         console.log(err)
       })
   }, []
-  );
-*/  
+  ); 
 
   return (
     <>
@@ -93,7 +94,7 @@ const index = () => {
                     <br></br>
                     <br></br>
 
-                    <CButton color="primary" className="px-4">
+                    <CButton onClick={updateUser} color="primary" className="px-4">
                         Update
                     </CButton>
                 </CForm>
