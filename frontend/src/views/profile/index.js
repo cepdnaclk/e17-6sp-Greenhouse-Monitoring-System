@@ -59,7 +59,7 @@ const index = () => {
   }
 
   useEffect(() => {
-    axios.get("localhost:3000/users/getinfo")
+    axios.get('http://localhost:3000/users/getinfo')
       .then(res => {
         console.log(res);
         setFirstname(res.data[1].firstname)
