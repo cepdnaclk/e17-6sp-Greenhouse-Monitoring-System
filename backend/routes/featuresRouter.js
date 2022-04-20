@@ -19,7 +19,7 @@ router.get('/', function(req, res, next) {
 // obtaining total crop yield route "/get-yield"
 // add midlewares to check authentication
 router.get('/get-yield', authenticate.verifyUser, (req, res) =>{
-  
+
   var totalYield = 0;
 
   Plant.find({})
@@ -36,6 +36,9 @@ router.get('/get-yield', authenticate.verifyUser, (req, res) =>{
 
 });
 
+
+// obtaining one plant crop yield route "/get-yield/plantID"
+// add midlewares to check authentication
 router.get('/get-yield/:plantID', authenticate.verifyUser, (req, res) =>{
 
   Plant.find({plantID: req.params.plantID})
