@@ -7,7 +7,7 @@ def get_created_time(file_path):
     return time.ctime(os.path.getctime(file_path))
 
 #file paths
-video_file = r'C:\Users\user\Pictures\Camera Roll\WIN_20220418_23_44_47_Pro.mp4'
+video_file = r'C:\Users\user\Pictures\Camera Roll\WIN_20220420_08_38_24_Pro.mp4'
 img_folder = r'C:\Users\user\Documents\ZED'
 
 
@@ -42,7 +42,7 @@ print('fps: '+ str(fps))
 
 
 i=0
-count = 0
+count = 1
 temp = convert_time(vid_created)
 while (i < len(sorted_files)):
     success,frame = vidcap.read()
