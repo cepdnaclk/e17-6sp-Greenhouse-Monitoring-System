@@ -1,6 +1,8 @@
 import os.path,time
 from traceback import print_tb
 import cv2
+import os
+import shutil
 
 #get created time of file
 def get_created_time(file_path):
@@ -41,6 +43,20 @@ fps = int(vidcap.get(cv2.CAP_PROP_FPS))
 print('fps: '+ str(fps))
 
 
+# detect the current working directory 
+path = os.getcwd()
+
+# Create folders from A1 to number of images taken from zed camera
+for i in range(1, len(sorted_files)+1):
+    try:
+        os.mkdir(path+"/A"+str(i))
+    except OSError:
+        print ("Creation of the directory %s failed" % path)
+    else:
+        print ("Successfully created the directory %s " % path)
+
+
+
 i=0
 count = 1
 temp = convert_time(vid_created)
@@ -48,8 +64,18 @@ while (i < len(sorted_files)):
     success,frame = vidcap.read()
     img_created = get_created_time(r'C:\Users\user\Documents\ZED\\'+sorted_files[i])
     timeDiff = convert_time(img_created) -  convert_time(vid_created)
+
     if (count % (timeDiff*fps)==0):
         print(timeDiff)
-        cv2.imwrite('output'+str(i)+'.png',frame,params=[cv2.IMWRITE_PNG_COMPRESSION,2])
+        cv2.imwrite('A' +str(i+1) +'/' + 'output'+str(i+1)+'.png',frame,params=[cv2.IMWRITE_PNG_COMPRESSION,2])
+
+        #copy zed images to correct directory
+        shutil.copy(r'C:\Users\user\Documents\ZED\\'+sorted_files[i], path+ '/A'+ str(i+1))
+
         i+=1
     count += 1
+
+
+
+
+
