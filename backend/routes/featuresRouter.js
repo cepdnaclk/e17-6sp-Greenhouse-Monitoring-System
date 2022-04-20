@@ -53,6 +53,7 @@ router.get('/get-yield/:plantID', authenticate.verifyUser, (req, res) =>{
 
 // Leaf diseases details route ./get-disease
 // get all diseases of all plants
+// add midlewares to check authentication
 router.get('/get-disease', authenticate.verifyUser, (req, res) =>{
 
   var diseaseArray = [];
