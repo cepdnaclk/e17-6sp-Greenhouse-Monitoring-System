@@ -71,7 +71,8 @@ router.get('/get-disease', authenticate.verifyUser, (req, res) =>{
 
 });
 
-// get all diseases of one plant
+// get all diseases of one plant route ./get-disease/plantID
+// add midlewares to check authentication
 router.get('/get-disease/:plantID', authenticate.verifyUser, (req, res) =>{
   Plant.find({plantID: req.params.plantID})
   .then(plant => {
