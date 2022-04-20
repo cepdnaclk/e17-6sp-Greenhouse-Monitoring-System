@@ -16,10 +16,10 @@ router.get('/', function(req, res, next) {
   res.send('Show features');
 });
 
-//user profile details route "/getinfo"
+// obtaining total crop yield route "/get-yield"
 // add midlewares to check authentication
 router.get('/get-yield', authenticate.verifyUser, (req, res) =>{
-
+  
   var totalYield = 0;
 
   Plant.find({})
