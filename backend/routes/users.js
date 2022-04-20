@@ -58,7 +58,7 @@ router.get('/logout', (req, res) => {
 
 //user profile details route "/getinfo"
 router.get('/getinfo', authenticate.verifyUser, (req, res) =>{
-  //get user details
+  //get user profile details
   User.findById(req.user._id, (err, user) => {
     if(err) {
       res.statusCode = 500;
