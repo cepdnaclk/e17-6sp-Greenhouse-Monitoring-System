@@ -32,7 +32,7 @@ router.post('/signup', (req, res, next) => {
   });
 });
 
-//user login
+//user login route "/login"
 router.post('/login', passport.authenticate('local'), (req, res) => {
   var token = authenticate.getToken({_id: req.user._id});
   res.statusCode = 200;
