@@ -2,6 +2,7 @@
 ## Testing Plan
 #### Testing Methods
 - Unit Testing
+- REST API Testing
 - Integrated Testing
 
 <br>
@@ -28,14 +29,15 @@
 <td valign="top">Backend Testing</td>
 <td valign="top">To ensure that all API endpoints are functioning properly in order for the system to function properly.Each endpoint's requests are sent and verified whether the response data and status code are correct.
 <br>
-- User Login Testing <br>
-- Obtaining User Info Testing <br>
-- User Info Update Testing <br>
-- Image Upload Testing <br>
-- Obtaining Total Crop yield Testing <br>
-- Obtaining One Plant Crop yield Testing <br>
-- Obtaining all diseases of all Plants Testing <br>
-- Obtaining all diseases of one plant Testing <br>
+<ul>
+<li> User Login Testing </li>
+<li>Obtaining User Info Testing </li>
+<li>User Info Update Testing </li>
+<li>Image Upload Testing </li>
+<li>Obtaining Total Crop yield Testing </li>
+<li>Obtaining One Plant Crop yield Testing </li>
+<li>Obtaining all diseases of all Plants Testing </li>
+<li>Obtaining all diseases of one plant Testing </li>
 
 </td>
 <td valign="top">Using Postman</td>
