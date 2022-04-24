@@ -3,7 +3,7 @@
 #### Testing Methods
 - Unit Testing
 - REST API Testing
-- Integrated Testing
+- Integration Testing
 
 <br>
 
@@ -41,6 +41,13 @@
 
 </td>
 <td valign="top">Using Postman</td>
+</tr>
+
+<tr>
+<td valign="top">Integration Testing</td>
+<td valign="top">CI/CD Pipeline Testing</td>
+<td valign="top">To ensure that completly implemented module is working properly</td>
+<td valign="top">From Azure Devops CI/CD pipeline Testing</td>
 </tr>
 
 
